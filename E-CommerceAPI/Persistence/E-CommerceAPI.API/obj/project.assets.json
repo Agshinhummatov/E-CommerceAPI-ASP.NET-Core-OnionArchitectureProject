@@ -13,6 +13,22 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -88,6 +104,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "E-CommerceAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "E-CommerceAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/E-CommerceAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-CommerceAPI.Application.dll": {}
+        }
+      },
+      "E-CommerceAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/E-CommerceAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-CommerceAPI.Domain.dll": {}
+        }
+      },
+      "E-CommerceAPI.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "E-CommerceAPI.Application": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/E-CommerceAPI.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-CommerceAPI.Persistence.dll": {}
+        }
       }
     }
   },
@@ -117,6 +170,38 @@
         "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
         "tools/netcoreapp2.1/GetDocument.Insider.dll",
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.OpenApi/1.2.3": {
@@ -216,10 +301,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "E-CommerceAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/E-CommerceAPI.Application/E-CommerceAPI.Application.csproj",
+      "msbuildProject": "../../Core/E-CommerceAPI.Application/E-CommerceAPI.Application.csproj"
+    },
+    "E-CommerceAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/E-CommerceAPI.Domain/E-CommerceAPI.Domain.csproj",
+      "msbuildProject": "../../Core/E-CommerceAPI.Domain/E-CommerceAPI.Domain.csproj"
+    },
+    "E-CommerceAPI.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/E-CommerceAPI.Persistence/E-CommerceAPI.Persistence.csproj",
+      "msbuildProject": "../../Infrastructure/E-CommerceAPI.Persistence/E-CommerceAPI.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "E-CommerceAPI.Application >= 1.0.0",
+      "E-CommerceAPI.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -254,7 +356,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj": {
+              "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj"
+            },
+            "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj": {
+              "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

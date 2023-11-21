@@ -1,0 +1,17 @@
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Infrastructure.deps.json
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Infrastructure.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Infrastructure.pdb
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Application.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Domain.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Application.pdb
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\bin\Debug\net6.0\E-CommerceAPI.Domain.pdb
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.csproj.CopyComplete
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\refint\E-CommerceAPI.Infrastructure.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\E-CommerceAPI.Infrastructure.pdb
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Infrastructure\E-CommerceAPI.Infrastructure\obj\Debug\net6.0\ref\E-CommerceAPI.Infrastructure.dll
