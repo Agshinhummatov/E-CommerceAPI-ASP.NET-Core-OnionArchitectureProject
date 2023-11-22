@@ -13,5 +13,7 @@ namespace E_CommerceAPI.Domain.Entities
         public int Stock { get; set; }
 
         public long Price { get; set; }
+
+        public ICollection<Order> Orders { get; set; }
     }
 }

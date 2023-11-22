@@ -37,3 +37,8 @@ C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.pdb
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.genruntimeconfig.cache
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\obj\Debug\net6.0\ref\E-CommerceAPI.API.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Persistence\E-CommerceAPI.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
