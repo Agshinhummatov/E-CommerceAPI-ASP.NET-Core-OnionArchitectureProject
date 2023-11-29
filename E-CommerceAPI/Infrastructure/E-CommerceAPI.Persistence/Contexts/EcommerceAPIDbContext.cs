@@ -8,15 +8,27 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Persistence.Contexts
 {
-    public class EcommerceAPIDbContext : DbContext
+    public class ECommerceAPIDbContext  :DbContext
     {
-        public EcommerceAPIDbContext(DbContextOptions options) : base(options) { }
-        
-        public DbSet<Product> Products { get; set; } 
-        public DbSet<Order> Orders { get; set; } 
-        public DbSet<Customer> Customers { get; set; } 
+        public ECommerceAPIDbContext(DbContextOptions options) : base(options) { }
+       
+       
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<OrderProduct> OrderProducts { get; set; }
 
 
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    //modelBuilder.Entity<Product>();
+        //    //modelBuilder.Entity<Order>();
+        //    //modelBuilder.Entity<Customer>();
+        //    //modelBuilder.Entity<OrderProduct>();
+
+        //}
 
     }
 }

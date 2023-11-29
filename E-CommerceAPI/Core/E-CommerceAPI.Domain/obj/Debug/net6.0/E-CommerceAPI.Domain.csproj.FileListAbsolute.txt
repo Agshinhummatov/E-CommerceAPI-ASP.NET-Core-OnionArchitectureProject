@@ -1,4 +1,5 @@
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\bin\Debug\net6.0\E-CommerceAPI.Domain.deps.json
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\bin\Debug\net6.0\E-CommerceAPI.Domain.runtimeconfig.json
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\bin\Debug\net6.0\E-CommerceAPI.Domain.dll
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\bin\Debug\net6.0\E-CommerceAPI.Domain.pdb
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\E-CommerceAPI.Domain.csproj.AssemblyReference.cache
@@ -9,4 +10,5 @@ C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\E-CommerceAPI.Domain.dll
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\refint\E-CommerceAPI.Domain.dll
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\E-CommerceAPI.Domain.pdb
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\E-CommerceAPI.Domain.genruntimeconfig.cache
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Core\E-CommerceAPI.Domain\obj\Debug\net6.0\ref\E-CommerceAPI.Domain.dll
