@@ -80,3 +80,4 @@ C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Presentation\E-CommerceAPI.API
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.pdb
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.genruntimeconfig.cache
 C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\ref\E-CommerceAPI.API.dll
+C:\Users\User-BT\Desktop\AngularAPI\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.MvcApplicationPartsAssemblyInfo.cs

@@ -2844,7 +2844,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "E-CommerceAPI.Domain >= 1.0.0"
+      "E-CommerceAPI.Domain >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.25"
     ]
   },
   "packageFolders": {
@@ -2894,6 +2895,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.25, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WW9xnqgPtblgs3qjsiJOY8KFhlpLqWj6130ms6QtUC1QXd3+u53nMHE4TTkKIMKbyiopVf4XiA6xpEa9LIwklg==",
+  "dgSpecHash": "YYFG8WjsxR0DbBfJxQmDKHV7TTQuiQ7KH0KcLjDss3zrECPLjXlcuVQzbpiFYgtCJ2Lr3aRCWOi+S1P7UxUjcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj",
   "expectedPackageFiles": [
