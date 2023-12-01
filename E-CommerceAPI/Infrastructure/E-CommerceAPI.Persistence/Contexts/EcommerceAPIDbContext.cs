@@ -18,7 +18,7 @@ namespace E_CommerceAPI.Persistence.Contexts
         public DbSet<Order> Orders { get; set; }
         public DbSet<Customer> Customers { get; set; }
 
-        public DbSet<OrderProduct> OrderProducts { get; set; }
+        //public DbSet<OrderProduct> OrderProducts { get; set; }
 
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)

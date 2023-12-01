@@ -12,7 +12,7 @@ namespace E_CommerceAPI.Domain.Entities
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
 
-        public ICollection<OrderProduct> OrderProducts { get; set; }
+        public ICollection<Product> Products { get; set; }
 
 
     }

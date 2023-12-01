@@ -70,36 +70,6 @@ namespace E_CommerceAPI.Persistence.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("E_CommerceAPI.Domain.Entities.OrderProduct", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("OrderId1")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("ProductId1")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId1");
-
-                    b.HasIndex("ProductId1");
-
-                    b.ToTable("OrderProducts");
-                });
-
             modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -124,6 +94,21 @@ namespace E_CommerceAPI.Persistence.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("OrderProduct", b =>
+                {
+                    b.Property<Guid>("OrdersId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ProductsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("OrdersId", "ProductsId");
+
+                    b.HasIndex("ProductsId");
+
+                    b.ToTable("OrderProduct");
+                });
+
             modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Order", b =>
                 {
                     b.HasOne("E_CommerceAPI.Domain.Entities.Customer", "Customer")
@@ -135,38 +120,24 @@ namespace E_CommerceAPI.Persistence.Migrations
                     b.Navigation("Customer");
                 });
 
-            modelBuilder.Entity("E_CommerceAPI.Domain.Entities.OrderProduct", b =>
+            modelBuilder.Entity("OrderProduct", b =>
                 {
-                    b.HasOne("E_CommerceAPI.Domain.Entities.Order", "Order")
-                        .WithMany("OrderProducts")
-                        .HasForeignKey("OrderId1")
+                    b.HasOne("E_CommerceAPI.Domain.Entities.Order", null)
+                        .WithMany()
+                        .HasForeignKey("OrdersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("E_CommerceAPI.Domain.Entities.Product", "Product")
-                        .WithMany("OrderProducts")
-                        .HasForeignKey("ProductId1")
+                    b.HasOne("E_CommerceAPI.Domain.Entities.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Customer", b =>
                 {
                     b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Order", b =>
-                {
-                    b.Navigation("OrderProducts");
-                });
-
-            modelBuilder.Entity("E_CommerceAPI.Domain.Entities.Product", b =>
-                {
-                    b.Navigation("OrderProducts");
                 });
 #pragma warning restore 612, 618
         }

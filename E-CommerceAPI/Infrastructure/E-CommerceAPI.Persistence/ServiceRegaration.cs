@@ -1,5 +1,4 @@
-﻿using E_CommerceAPI.Application.Abstiraction;
-using E_CommerceAPI.Persistence.Contexts;
+﻿using E_CommerceAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
