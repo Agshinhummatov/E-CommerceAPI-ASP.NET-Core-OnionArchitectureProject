@@ -21,14 +21,16 @@ namespace E_CommerceAPI.Persistence.Contexts
         //public DbSet<OrderProduct> OrderProducts { get; set; }
 
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    //modelBuilder.Entity<Product>();
-        //    //modelBuilder.Entity<Order>();
-        //    //modelBuilder.Entity<Customer>();
-        //    //modelBuilder.Entity<OrderProduct>();
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Product>();
+            //modelBuilder.Entity<Order>();
+            //modelBuilder.Entity<Customer>();
+            //modelBuilder.Entity<OrderProduct>();
 
-        //}
+            base.OnModelCreating(modelBuilder);
+
+        }
 
     }
 }

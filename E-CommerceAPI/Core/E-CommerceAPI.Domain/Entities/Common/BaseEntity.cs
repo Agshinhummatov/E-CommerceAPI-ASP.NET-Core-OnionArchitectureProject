@@ -10,7 +10,9 @@ namespace E_CommerceAPI.Domain.Entities.Common
     {
         public Guid Id { get; set; }
 
-        public DateTime CreatedTime { get; set; }
+        public DateTime CreatedDate { get; set; }
+
+        public DateTime UpdatedDate { get; set; }
 
     }
 }
