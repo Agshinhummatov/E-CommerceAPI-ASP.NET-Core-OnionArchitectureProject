@@ -1,4 +1,5 @@
 ﻿using E_CommerceAPI.Domain.Entities;
+using E_CommerceAPI.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,15 +22,36 @@ namespace E_CommerceAPI.Persistence.Contexts
         //public DbSet<OrderProduct> OrderProducts { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            //modelBuilder.Entity<Product>();
-            //modelBuilder.Entity<Order>();
-            //modelBuilder.Entity<Customer>();
-            //modelBuilder.Entity<OrderProduct>();
+            //var datas = ChangeTracker.Entries<BaseEntity>();
 
-            base.OnModelCreating(modelBuilder);
 
+            //foreach (var data in ChangeTracker.Entries<BaseEntity>())
+            //{
+            //    switch (data.State)
+            //    {
+            //        case EntityState.Added:
+            //            data.Entity.CreatedDate = DateTime.UtcNow;
+            //            break;
+
+            //        case EntityState.Modified:
+            //            data.Entity.UpdatedDate = DateTime.UtcNow;
+            //            break;
+            //    }
+            //}
+
+
+            foreach (var data in ChangeTracker.Entries<BaseEntity>())
+            {
+                _ = data.State switch
+                {
+                  EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
+                  EntityState.Modified => data.Entity.UpdatedDate= DateTime.UtcNow,
+                };
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);    
         }
 
     }
