@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Persistence.Contexts
 {
-    public class ECommerceAPIDbContext  :DbContext
+    public class ECommerceAPIDbContext : DbContext
     {
         public ECommerceAPIDbContext(DbContextOptions options) : base(options) { }
        
