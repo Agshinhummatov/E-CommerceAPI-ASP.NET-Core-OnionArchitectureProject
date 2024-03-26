@@ -24,6 +24,10 @@ namespace E_CommerceAPI.Persistence.Contexts
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
+
+            //ChangeTracker : Entityler üzerinden yapılan değişiklerin ya da yeni eklenen verinin yakalanmasını sağlayan propertydir. Update operasyonlarında Track edilen verileri yakalayıp elde etmemizi sağlar.
+
+
             //var datas = ChangeTracker.Entries<BaseEntity>();
 
 
@@ -46,12 +50,15 @@ namespace E_CommerceAPI.Persistence.Contexts
             {
                 _ = data.State switch
                 {
-                  EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
-                  EntityState.Modified => data.Entity.UpdatedDate= DateTime.UtcNow,
+                    EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
+
+                    EntityState.Modified => data.Entity.UpdatedDate = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
                 };
+
             }
 
-            return await base.SaveChangesAsync(cancellationToken);    
+                return await base.SaveChangesAsync(cancellationToken);    
         }
 
     }

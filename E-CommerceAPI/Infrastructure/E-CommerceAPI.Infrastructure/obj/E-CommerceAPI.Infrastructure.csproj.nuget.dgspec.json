@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj": {}
+    "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj": {
+    "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
         "projectName": "E-CommerceAPI.Application",
-        "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
-        "packagesPath": "C:\\Users\\User-BT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User-BT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj": {
-                "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj"
+              "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj"
               }
             }
           }
@@ -69,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj": {
+    "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
         "projectName": "E-CommerceAPI.Domain",
-        "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
-        "packagesPath": "C:\\Users\\User-BT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User-BT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -156,24 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj": {
+    "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
         "projectName": "E-CommerceAPI.Infrastructure",
-        "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\User-BT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User-BT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -188,8 +188,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj": {
-                "projectPath": "C:\\Users\\User-BT\\Desktop\\AngularAPI\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj"
+              "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj"
               }
             }
           }
@@ -219,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

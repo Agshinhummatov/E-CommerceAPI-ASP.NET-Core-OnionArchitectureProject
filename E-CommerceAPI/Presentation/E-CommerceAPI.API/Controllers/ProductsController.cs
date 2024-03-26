@@ -37,8 +37,9 @@ namespace E_CommerceAPI.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
-            return Ok(_productReadRepository.GetByIdAsync(id,false));
+            return Ok(await _productReadRepository.GetByIdAsync(id, false));
         }
+
 
 
         [HttpPost]
@@ -72,18 +73,14 @@ namespace E_CommerceAPI.API.Controllers
 
         }
 
-        [HttpDelete("{id}")]
 
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
             await _productWriteRepository.RemoveAsync(id);
-
             await _productWriteRepository.SaveAsync();
-
             return Ok();
-
         }
-
 
 
 
