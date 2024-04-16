@@ -1,4 +1,6 @@
 ﻿using E_CommerceAPI.Application.Repositories;
+using E_CommerceAPI.Application.RequestParameters;
+using E_CommerceAPI.Application.Services;
 using E_CommerceAPI.Application.ViewModels.Products;
 using E_CommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
@@ -14,23 +16,42 @@ namespace E_CommerceAPI.API.Controllers
     {
         readonly private IProductReadRepository _productReadRepository;
         readonly private IProductWriteRepository _productWriteRepository;
+        readonly private IWebHostEnvironment _webHostEnvironment;
+        readonly IFileService _fileService;
 
 
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
-
+            this._webHostEnvironment = webHostEnvironment;
+            _fileService = fileService;
 
         }
 
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] [FromServices]Pagination pagination)
         {
+            
+            var totalCount = _productReadRepository.GetAll(false).Count();
 
-            return Ok(_productReadRepository.GetAll(false));
+            var products = _productReadRepository.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size).Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Price,
+                p.Stock,
+                p.CreatedDate,
+                p.UpdatedDate
+            }).ToList();
+
+            return Ok(new
+            {
+                totalCount,
+                products
+            });
         }
 
 
@@ -83,7 +104,14 @@ namespace E_CommerceAPI.API.Controllers
         }
 
 
+        [HttpPost("action")]
+        public async Task<IActionResult> Upload()
+        {
+           await _fileService.UploadAsync("resource/product-images", Request.Form.Files);
 
+            return Ok();
+
+        }
 
 
 

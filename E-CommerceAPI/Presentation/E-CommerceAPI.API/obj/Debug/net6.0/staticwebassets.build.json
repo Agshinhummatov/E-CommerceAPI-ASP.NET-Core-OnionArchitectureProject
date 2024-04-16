@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "oQ2QS0/SWwU7Ku25KiSNfU5Py+XDgTYY9siypq9BBQU=",
+  "Hash": "Ym2AkuOKvUxUO0A09dSrUzbtML39k6BGYjccycBWxT0=",
   "Source": "E-CommerceAPI.API",
   "BasePath": "_content/E-CommerceAPI.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "E-CommerceAPI.API\\wwwroot",
+      "Source": "E-CommerceAPI.API",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "BasePath": "_content/E-CommerceAPI.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

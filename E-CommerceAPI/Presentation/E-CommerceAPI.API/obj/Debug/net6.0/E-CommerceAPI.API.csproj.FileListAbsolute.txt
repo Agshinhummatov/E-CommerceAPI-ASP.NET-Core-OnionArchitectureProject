@@ -168,3 +168,4 @@ C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAP
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.API.staticwebassets.runtime.json

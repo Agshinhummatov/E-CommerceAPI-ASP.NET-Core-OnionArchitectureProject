@@ -1,4 +1,5 @@
 using E_CommerceAPI.Application.Validations.Products;
+using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPresistenceServices();
 
+builder.Services.AddInfrastructureServices();
 
 
 //builder.Services.AddDbContext<EcommerceAPIDbContext>(opt =>
@@ -40,6 +42,8 @@ if (app.Environment.IsDevelopment())
 
 
 
+
+app.UseStaticFiles();
 
 
 app.UseCors(); // AddCors() method isledir
