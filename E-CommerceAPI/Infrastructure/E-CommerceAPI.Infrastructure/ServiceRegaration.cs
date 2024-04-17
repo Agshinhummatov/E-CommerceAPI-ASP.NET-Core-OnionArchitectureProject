@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Infrastructure
 {
-    public static class ServiceRegaration
+
+    public static class ServiceRegistration
     {
         public static void AddInfrastructureServices(this IServiceCollection serviceCollection)
         {
