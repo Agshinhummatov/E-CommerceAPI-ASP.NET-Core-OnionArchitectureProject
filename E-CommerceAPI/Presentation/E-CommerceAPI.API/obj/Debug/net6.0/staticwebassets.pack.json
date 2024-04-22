@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon-2.png",
+      "PackagePath": "staticwebassets\\resource\\invoices\\9004715crossdeleteremovecancelicon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon.png",
+      "PackagePath": "staticwebassets\\resource\\invoices\\9004715crossdeleteremovecancelicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\product-images\\9004715crossdeleteremovecancelicon---Copy.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\9004715crossdeleteremovecancelicon---Copy.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.E-CommerceAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.E-CommerceAPI.API.props",
+      "PackagePath": "build\\E-CommerceAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.E-CommerceAPI.API.props",
+      "PackagePath": "buildMultiTargeting\\E-CommerceAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.E-CommerceAPI.API.props",
+      "PackagePath": "buildTransitive\\E-CommerceAPI.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
