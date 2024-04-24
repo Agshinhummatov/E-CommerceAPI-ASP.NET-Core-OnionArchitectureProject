@@ -140,26 +140,26 @@ namespace E_CommerceAPI.API.Controllers
             //await _productImageFileWriteRepository.SaveAsync();
 
 
-            //await _invoiceFileWriteRepository.AddRangeAsync(datas.Select(d => new InvoiceFile()
-            //{
-            //    FileName = d.fileName,
-            //    Path = d.path,
-            //    Price = new Random().Next()
-
-
-            //}).ToList());
-
-            //await _invoiceFileWriteRepository.SaveAsync();
-
-
-            await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E_CommerceAPI.Domain.Entities.File()
+            await _invoiceFileWriteRepository.AddRangeAsync(datas.Select(d => new InvoiceFile()
             {
                 FileName = d.fileName,
                 Path = d.path,
-               
+                Price = new Random().Next()
 
 
             }).ToList());
+
+            await _invoiceFileWriteRepository.SaveAsync();
+
+
+            //await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E_CommerceAPI.Domain.Entities.File()
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.path,
+               
+
+
+            //}).ToList());
 
             await _fileWriteRepository.SaveAsync();
             return Ok();
