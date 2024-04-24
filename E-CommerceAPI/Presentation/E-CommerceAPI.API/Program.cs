@@ -1,6 +1,7 @@
 using E_CommerceAPI.Application.Validations.Products;
 using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
+using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 
@@ -12,6 +13,7 @@ builder.Services.AddPresistenceServices();
 
 builder.Services.AddInfrastructureServices();
 
+builder.Services.AddStorage<LocalStorage>(); // burda bildiremki filerim hansi localdanmi istifade edecek yoxsa azuredenmi
 
 //builder.Services.AddDbContext<EcommerceAPIDbContext>(opt =>
 //{

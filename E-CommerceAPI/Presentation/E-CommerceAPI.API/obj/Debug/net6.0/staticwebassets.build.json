@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "StwymuMzqfBYb5IelD2+5fiyjz6eZlmLaFKwqtzwI9g=",
+  "Hash": "tZzFZ7UATt1IZ5l79Cm31GOVuP5cLzegoIev5ngxlTo=",
   "Source": "E-CommerceAPI.API",
   "BasePath": "_content/E-CommerceAPI.API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
-      "RelativePath": "resource/invoices/9004715crossdeleteremovecancelicon.png",
+      "RelativePath": "resource/files/9004715_cross_delete_remove_cancel_icon - Copy.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon.png"
+      "OriginalItemSpec": "wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png"
     },
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon-2.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
-      "RelativePath": "resource/invoices/9004715crossdeleteremovecancelicon-2.png",
+      "RelativePath": "resource/files/9004715_cross_delete_remove_cancel_icon.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,26 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\invoices\\9004715crossdeleteremovecancelicon-2.png"
-    },
-    {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\product-images\\9004715crossdeleteremovecancelicon---Copy.png",
-      "SourceId": "E-CommerceAPI.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
-      "BasePath": "_content/E-CommerceAPI.API",
-      "RelativePath": "resource/product-images/9004715crossdeleteremovecancelicon---Copy.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\9004715crossdeleteremovecancelicon---Copy.png"
+      "OriginalItemSpec": "wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png"
     }
   ]
 }
