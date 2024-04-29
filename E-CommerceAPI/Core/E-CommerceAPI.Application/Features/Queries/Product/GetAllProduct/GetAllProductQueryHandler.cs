@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Queries.GetAllProduct
+namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
 {
-    public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponse>
+    public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponce>
     {
 
 
@@ -18,7 +18,7 @@ namespace E_CommerceAPI.Application.Features.Queries.GetAllProduct
             _productReadRepository = productReadRepository;
         }
 
-        public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetAllProductQueryResponce> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
             var totalCount = _productReadRepository.GetAll(false).Count();
 
@@ -32,8 +32,9 @@ namespace E_CommerceAPI.Application.Features.Queries.GetAllProduct
                 p.UpdatedDate
             }).ToList();
 
-            return new() { 
-            
+            return new()
+            {
+
                 Products = products,
                 TotalCount = totalCount
             };

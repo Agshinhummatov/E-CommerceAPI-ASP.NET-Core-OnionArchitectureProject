@@ -1,6 +1,7 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Storage;
-using E_CommerceAPI.Application.Features.Commands.CreateProduct;
-using E_CommerceAPI.Application.Features.Queries.GetAllProduct;
+using E_CommerceAPI.Application.Features.Commands.Product.CreateProduct;
+using E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct;
+using E_CommerceAPI.Application.Features.Queries.Product.GetByIdProduct;
 using E_CommerceAPI.Application.Repositories;
 using E_CommerceAPI.Application.RequestParameters;
 
@@ -67,16 +68,17 @@ namespace E_CommerceAPI.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllProductQueryRequest getAllProductQueryRequest )
         {
-            GetAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            GetAllProductQueryResponce response = await _mediator.Send(getAllProductQueryRequest);
 
             return Ok(response);
         }
 
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(string id)
+        public async Task<IActionResult> Get(GetByIdProductQureyRequset getByIdProductQureyRequset)
         {
-            return Ok(await _productReadRepository.GetByIdAsync(id, false));
+            GetByIdProductQureyResponse responce = await _mediator.Send(getByIdProductQureyRequset);
+            return Ok();
         }
 
 
