@@ -1,17 +1,37 @@
-﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using E_CommerceAPI.Application.Repositories;
+using MediatR;
+using P = E_CommerceAPI.Domain.Entities;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.UpdateProduct
 {
     public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommandRequset, UpdateProductCommandResponce>
     {
+        readonly IProductReadRepository _productReadRepository;
+        readonly IProductWriteRepository _productWriteRepository;
+
+        public UpdateProductCommandHandler(IProductReadRepository productReadRepository)
+        {
+            _productReadRepository = productReadRepository;
+        }
+
+        public UpdateProductCommandHandler(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        {
+            _productReadRepository = productReadRepository;
+            _productWriteRepository = productWriteRepository;
+        }
+
         public async Task<UpdateProductCommandResponce> Handle(UpdateProductCommandRequset request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            P.Product product = await _productReadRepository.GetByIdAsync(request.Id);
+
+            product.Name = request.Name;
+            product.Price = request.Price;
+            product.Stock = request.Stock;
+
+
+            await _productWriteRepository.SaveAsync();
+
+            return new();
         }
     }
 }

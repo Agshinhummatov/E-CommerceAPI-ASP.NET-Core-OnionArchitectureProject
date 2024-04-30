@@ -16,7 +16,11 @@ public GetByIdProductQureyHandler(IProductReadRepository productReadRepository)
         public async Task<GetByIdProductQureyResponse> Handle(GetByIdProductQureyRequset request, CancellationToken cancellationToken)
         {
            P.Product product = await _productReadRepository.GetByIdAsync(request.Id, false);
-            return new() { };
+            return new() {
+            Price = product.Price,
+            Stock = product.Stock,
+            Name = product.Name
+            };
         }
     }
 }

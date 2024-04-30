@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.UploadPro
 {
     public class UploadProductImageCommandRequest : IRequest<UploadProductImageCommandResponce>
     {
+        public string Id { get; set; }
 
+        public IFormFileCollection? Files { get; set; }
     }
 }

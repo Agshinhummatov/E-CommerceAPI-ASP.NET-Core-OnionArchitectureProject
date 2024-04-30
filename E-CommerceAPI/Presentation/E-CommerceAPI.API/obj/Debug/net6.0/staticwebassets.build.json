@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ic/YxbzZgiQxGl3mZI2zIFZSB/+g3BwtZmiPYgFbgC8=",
+  "Hash": "04jgV2lEY0UxHslMML8QOlN1ZirDxHxsYsuxmvDmS1k=",
   "Source": "E-CommerceAPI.API",
   "BasePath": "_content/E-CommerceAPI.API",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
+      "SourceId": "E-CommerceAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "BasePath": "_content/E-CommerceAPI.API",
+      "RelativePath": "photo-images/Files",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\Files"
+    },
     {
       "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
       "SourceId": "E-CommerceAPI.API",

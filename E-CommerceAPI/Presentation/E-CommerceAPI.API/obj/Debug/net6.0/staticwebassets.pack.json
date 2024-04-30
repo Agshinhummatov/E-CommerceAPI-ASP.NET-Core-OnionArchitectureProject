@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
+      "PackagePath": "staticwebassets\\photo-images"
+    },
+    {
       "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
       "PackagePath": "staticwebassets\\photo-images\\indirdf.png"
     },

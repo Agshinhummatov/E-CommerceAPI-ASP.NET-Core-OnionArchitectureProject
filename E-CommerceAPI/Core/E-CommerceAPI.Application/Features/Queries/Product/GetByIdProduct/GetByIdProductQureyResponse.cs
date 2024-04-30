@@ -14,7 +14,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Product.GetByIdProduct
 
         public float Price { get; set; }
 
-        public ICollection<Order> Orders { get; set; }
+        //public ICollection<Order> Orders { get; set; }
 
         //public ICollection<ProductImageFile> ProductImagesFile { get; set; }
     }

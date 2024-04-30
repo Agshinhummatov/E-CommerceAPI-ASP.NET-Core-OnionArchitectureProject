@@ -17,7 +17,7 @@ builder.Services.AddInfrastructureServices();
 
 builder.Services.AddApplicationServices();
 
-builder.Services.AddStorage<LocalStorage>();// burda bildiremki filerim hansi localdanmi istifade edecek yoxsa azuredenmi
+builder.Services.AddStorage<AzureStorage>();// burda bildiremki filerim hansi localdanmi istifade edecek yoxsa azuredenmi
 
 
 
