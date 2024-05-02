@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.UploadProdcutImage
 {
-    public class UploadProductImageCommandHandler : IRequestHandler<UploadProductImageCommandRequest, UploadProductImageCommandResponce>
+    public class UploadProductImageCommandHandler : IRequestHandler<UploadProductImageCommandRequest, UploadProductImageCommandResponse>
     {
         readonly IStorageService _storageService;
         readonly IProductReadRepository _productReadRepository;
@@ -22,7 +22,7 @@ namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.UploadPro
             _productImageFileWriteRepository = productImageFileWriteRepository;
         }
 
-        public async Task<UploadProductImageCommandResponce> Handle(UploadProductImageCommandRequest request, CancellationToken cancellationToken)
+        public async Task<UploadProductImageCommandResponse> Handle(UploadProductImageCommandRequest request, CancellationToken cancellationToken)
         {
 
             List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("photo-images", request.Files);

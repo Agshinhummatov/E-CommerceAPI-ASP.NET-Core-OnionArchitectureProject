@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.UploadProdcutImage
 {
-    public class UploadProductImageCommandRequest : IRequest<UploadProductImageCommandResponce>
+    public class UploadProductImageCommandRequest : IRequest<UploadProductImageCommandResponse>
     {
         public string Id { get; set; }
 

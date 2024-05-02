@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
 {
-    public class GetAllProductQueryResponce
+    public class GetAllProductQueryResponse
     {
         public int TotalCount { get; set; }
         public object Products { get; set; }

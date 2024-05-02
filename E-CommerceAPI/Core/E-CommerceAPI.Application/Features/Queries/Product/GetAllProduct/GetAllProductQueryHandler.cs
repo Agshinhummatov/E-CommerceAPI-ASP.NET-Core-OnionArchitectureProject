@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
 {
-    public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponce>
+    public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponse>
     {
 
 
@@ -18,7 +18,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
             _productReadRepository = productReadRepository;
         }
 
-        public async Task<GetAllProductQueryResponce> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
             var totalCount = _productReadRepository.GetAll(false).Count();
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.RemoveProdcutImage
 {
-    public class RemoveProductImageCommandRequest : IRequest<RemoveProductImageCommandResponce>
+    public class RemoveProductImageCommandRequest : IRequest<RemoveProductImageCommandResponse>
     {
         public string Id { get; set; } 
         public string? ImageId { get; set; } 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
 {
-    public class CreateProductCommandResponce
+    public class CreateProductCommandResponse
     {
 
     }

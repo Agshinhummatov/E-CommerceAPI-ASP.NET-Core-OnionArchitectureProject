@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
 {
-    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequset, CreateProductCommandResponce>
+    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequset, CreateProductCommandResponse>
     {
         readonly IProductWriteRepository _productWriteRepository;
 
@@ -17,7 +17,7 @@ namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
             _productWriteRepository = productWriteRepository;
         }
 
-        public async Task<CreateProductCommandResponce> Handle(CreateProductCommandRequset request, CancellationToken cancellationToken)
+        public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequset request, CancellationToken cancellationToken)
         {
             await _productWriteRepository.AddAsync(new()
             {

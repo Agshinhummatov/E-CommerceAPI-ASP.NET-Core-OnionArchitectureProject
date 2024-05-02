@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
 {
-    public class GetAllProductQueryRequest : IRequest<GetAllProductQueryResponce>
+    public class GetAllProductQueryRequest : IRequest<GetAllProductQueryResponse>
     {
         //public Pagination Pagination { get; set; }
 

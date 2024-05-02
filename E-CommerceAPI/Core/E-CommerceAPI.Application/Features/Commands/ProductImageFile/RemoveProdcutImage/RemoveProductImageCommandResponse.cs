@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.RemoveProdcutImage
 {
-    public class RemoveProductImageCommandResponce
+    public class RemoveProductImageCommandResponse
     {
     }
 }

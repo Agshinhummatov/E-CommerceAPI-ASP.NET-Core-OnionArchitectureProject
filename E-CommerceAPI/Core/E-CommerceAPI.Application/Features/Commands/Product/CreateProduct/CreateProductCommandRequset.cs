@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
 {
-    public class CreateProductCommandRequset : IRequest<CreateProductCommandResponce>
+    public class CreateProductCommandRequset : IRequest<CreateProductCommandResponse>
     {
         public string Name { get; set; }
         public int Stock { get; set; }

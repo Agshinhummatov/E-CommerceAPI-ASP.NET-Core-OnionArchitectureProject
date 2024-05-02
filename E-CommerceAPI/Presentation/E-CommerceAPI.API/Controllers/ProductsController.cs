@@ -42,7 +42,7 @@ namespace E_CommerceAPI.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllProductQueryRequest getAllProductQueryRequest )
         {
-            GetAllProductQueryResponce response = await _mediator.Send(getAllProductQueryRequest);
+            GetAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
 
             return Ok(response);
         }
@@ -60,7 +60,7 @@ namespace E_CommerceAPI.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(CreateProductCommandRequset createProductCommandRequset)
         {
-            CreateProductCommandResponce responce = await _mediator.Send(createProductCommandRequset);
+            CreateProductCommandResponse responce = await _mediator.Send(createProductCommandRequset);
 
             return StatusCode((int)HttpStatusCode.Created);
         }
@@ -88,7 +88,7 @@ namespace E_CommerceAPI.API.Controllers
         {
 
             uploadProductImageCommandRequest.Files = Request.Form.Files;
-            UploadProductImageCommandResponce uploadProductImageCommandResponce = await _mediator.Send(uploadProductImageCommandRequest);
+            UploadProductImageCommandResponse uploadProductImageCommandResponce = await _mediator.Send(uploadProductImageCommandRequest);
 
             return Ok();
 
@@ -108,7 +108,7 @@ namespace E_CommerceAPI.API.Controllers
         public async Task<ActionResult> DeleteProductImage( [FromRoute] RemoveProductImageCommandRequest removeProductImageCommandRequest, [FromQuery] string imageId)
         {
             removeProductImageCommandRequest.ImageId = imageId;
-            RemoveProductImageCommandResponce responce = await _mediator.Send(removeProductImageCommandRequest);
+            RemoveProductImageCommandResponse responce = await _mediator.Send(removeProductImageCommandRequest);
             return Ok();
         }
 

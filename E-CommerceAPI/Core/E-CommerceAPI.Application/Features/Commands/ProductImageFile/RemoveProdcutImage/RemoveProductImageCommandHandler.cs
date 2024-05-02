@@ -10,7 +10,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.RemoveProdcutImage
 {
-    public class RemoveProductImageCommandHandler : IRequestHandler<RemoveProductImageCommandRequest, RemoveProductImageCommandResponce>
+    public class RemoveProductImageCommandHandler : IRequestHandler<RemoveProductImageCommandRequest, RemoveProductImageCommandResponse>
     {
         readonly IProductReadRepository _productReadRepository;
         readonly IProductWriteRepository _productWriteRepository;
@@ -21,7 +21,7 @@ namespace E_CommerceAPI.Application.Features.Commands.ProductImageFile.RemovePro
             _productWriteRepository = productWriteRepository;
         }
 
-        public  async Task<RemoveProductImageCommandResponce> Handle(RemoveProductImageCommandRequest request, CancellationToken cancellationToken)
+        public  async Task<RemoveProductImageCommandResponse> Handle(RemoveProductImageCommandRequest request, CancellationToken cancellationToken)
         {
           Domain.Entities.Product? product = await _productReadRepository.Table.Include(p => p.ProductImagesFile).FirstOrDefaultAsync(p => p.Id == Guid.Parse(request.Id));
 
