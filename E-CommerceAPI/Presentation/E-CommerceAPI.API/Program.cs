@@ -6,6 +6,9 @@ using E_CommerceAPI.Infrastructure.Services.Storage.Azure;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +43,29 @@ builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer("Admin",options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateAudience = true, // olusturulacak token  degerini/ hangi orginlerin / hangi sitelerin kulanici 
+            // belirledigimi degeridir  --> burda her hansi bir cilinte terefindeki web sayt www.bilem.com 
+
+            ValidateIssuer = true, // olusturulacak token degerin kimin  dahitdigi ifade edeceyimiz deyerdir 
+            // -- > burda ise bizim APi yimiz olur www.myapi.com
+
+            ValidateLifetime = true, // olsuturulan token degerinin suresini kontrol edecek  olan dogrulamadir 
+
+            ValidateIssuerSigningKey = true, // Uretilecek token degerinin uygulamamiza ait bir deger oldugunu ifade eden
+            // sucrikey verisin dogrulanmasidir // sadece bizim uygulamaizi diger uygulamalardan ferqlendiren keydir yeni biz bunun vasitesi ile
+            // hec kim bu keyi tahmin edemez 
+
+            ValidAudience = builder.Configuration["Token:Audience"],
+            ValidIssuer = builder.Configuration["Token:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+        };
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,7 +86,8 @@ app.UseCors(); // AddCors() method isledir
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuthentication(); // midilawaredir bunlar
+app.UseAuthorization(); // midilawaredir bunlar
 
 app.MapControllers();
 

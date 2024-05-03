@@ -14,6 +14,7 @@ using E_CommerceAPI.Application.ViewModels.Products;
 using E_CommerceAPI.Domain.Entities;
 using E_CommerceAPI.Infrastructure.Services.Storage;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,7 @@ namespace E_CommerceAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Admin")]
     public class ProductsController : ControllerBase
     {
        

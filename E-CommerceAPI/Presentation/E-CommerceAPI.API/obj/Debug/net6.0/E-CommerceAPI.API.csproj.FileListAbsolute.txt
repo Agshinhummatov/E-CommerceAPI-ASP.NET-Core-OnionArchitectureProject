@@ -178,3 +178,4 @@ C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAP
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.pdb
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.genruntimeconfig.cache
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\ref\E-CommerceAPI.API.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

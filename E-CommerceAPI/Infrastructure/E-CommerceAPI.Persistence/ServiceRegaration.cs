@@ -15,8 +15,8 @@ namespace E_CommerceAPI.Persistence
 
             services.AddDbContext<ECommerceAPIDbContext>(options => options.UseSqlServer(Configuration.ConnectionString) ,ServiceLifetime.Singleton);
 
-            services.AddIdentity<AppUser,AppRole>(options =>
-            {
+            services.AddIdentity<AppUser,AppRole>(options => // burda yoxlamalar apaririq password ve diger movuzlarda
+            {  
                 options.Password.RequiredLength = 3;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireDigit = false;
