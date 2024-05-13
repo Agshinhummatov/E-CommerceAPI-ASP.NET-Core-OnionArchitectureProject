@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sEypXd42VhD38y1cKf58oQIe3phCTAAU2YHp20r3I6mvrOE33MFBn1zmaeZPzcaQjpVbk7gPhCMwVIGGKGu8gA==",
+  "dgSpecHash": "iO1bDJw8UA+6WRyWUcjliq4gA4mwFJnVFfW6U0oEMb5IHaEuiC1Jh1FzXD9onQpqfJFlZl11yOyOWgfZepOGIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
@@ -65,6 +68,7 @@
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",

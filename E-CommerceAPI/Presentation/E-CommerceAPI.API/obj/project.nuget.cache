@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0OHwpCPgMcWO7pUFXPqOixvT8T3m8o/8dfXuz5cGit1zLY17EOoQS53ifoXuMbF/WqFndqzEjhXdBsAfnc+LdQ==",
+  "dgSpecHash": "jQ+cj/CebHAo151tzUCQ0SOoD4Ze/LjSemSjohcOfZN7KCnp314LH6qlYp2mT3XjToFz4ydbHy95dEjy6R9IwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
@@ -75,6 +78,7 @@
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.3\\npgsql.entityframeworkcore.postgresql.6.0.3.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

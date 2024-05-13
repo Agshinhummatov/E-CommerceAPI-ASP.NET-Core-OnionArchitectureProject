@@ -1,5 +1,4 @@
-﻿using E_CommerceAPI.Application.Abstractions.Storage;
-using E_CommerceAPI.Application.Features.Commands.Product.CreateProduct;
+﻿using E_CommerceAPI.Application.Features.Commands.Product.CreateProduct;
 using E_CommerceAPI.Application.Features.Commands.Product.RemoveProduct;
 using E_CommerceAPI.Application.Features.Commands.Product.UpdateProduct;
 using E_CommerceAPI.Application.Features.Commands.ProductImageFile.RemoveProdcutImage;
@@ -7,19 +6,11 @@ using E_CommerceAPI.Application.Features.Commands.ProductImageFile.UploadProdcut
 using E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct;
 using E_CommerceAPI.Application.Features.Queries.Product.GetByIdProduct;
 using E_CommerceAPI.Application.Features.Queries.ProductImageFile.GetProductImages;
-using E_CommerceAPI.Application.Repositories;
-using E_CommerceAPI.Application.RequestParameters;
-
-using E_CommerceAPI.Application.ViewModels.Products;
-using E_CommerceAPI.Domain.Entities;
-using E_CommerceAPI.Infrastructure.Services.Storage;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Net;
-using System.Runtime.CompilerServices;
+
 
 namespace E_CommerceAPI.API.Controllers
 {
@@ -36,7 +27,7 @@ namespace E_CommerceAPI.API.Controllers
         public ProductsController(
             IMediator mediator)
         {
-            
+
             _mediator = mediator;
         }
 
