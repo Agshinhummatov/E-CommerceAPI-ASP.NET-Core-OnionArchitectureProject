@@ -10,9 +10,10 @@ namespace E_CommerceAPI.Application
 {
     public static class ServiceRegaration
     {
-        public static void AddApplicationServices(this IServiceCollection services)
+        public static void AddApplicationServices(this IServiceCollection collection)
         {
-            services.AddMediatR(typeof(ServiceRegaration));
+            collection.AddMediatR(typeof(ServiceRegaration));
+            collection.AddHttpClient();
         }
     }
 }
