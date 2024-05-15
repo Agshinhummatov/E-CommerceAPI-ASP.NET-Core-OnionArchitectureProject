@@ -20,7 +20,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Token
         }
 
 
-        public Application.DTOs.Token CreateAccessToken(int minute)
+        public Application.DTOs.Token CreateAccessToken(int second)
         {
             Application.DTOs.Token token = new();
             // Simmetrik Təhlükəsizlik Açarı  SecurityKey in simetricini aliram
@@ -33,7 +33,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Token
 
             // olusturalcak token ayarlarini veriyoruz
 
-            token.Expiration = DateTime.UtcNow.AddMinutes(minute); //5 deqiqelik ve ya nece deqielik  vaxt veririkki token bu qeder yasayacaq
+            token.Expiration = DateTime.UtcNow.AddMinutes(second); //5 deqiqelik ve ya nece deqielik  vaxt veririkki token bu qeder yasayacaq
 
             JwtSecurityToken securityToken = new(
                 audience : _configuration["Token:Audience"],

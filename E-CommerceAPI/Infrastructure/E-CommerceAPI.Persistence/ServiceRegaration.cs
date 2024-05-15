@@ -1,7 +1,10 @@
-﻿using E_CommerceAPI.Application.Repositories;
+﻿using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.Abstractions.Services.Authentications;
+using E_CommerceAPI.Application.Repositories;
 using E_CommerceAPI.Domain.Entities.Identity;
 using E_CommerceAPI.Persistence.Contexts;
 using E_CommerceAPI.Persistence.Repositories;
+using E_CommerceAPI.Persistence.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -39,6 +42,13 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
             services.AddScoped<IProductImageFileReadRepository, ProductImageFileReadRepository>();
             services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
+
+
+
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IExternalAuthentications, AuthService>();
+            services.AddScoped<IInternalAuthentications, AuthService>();
            
 
 

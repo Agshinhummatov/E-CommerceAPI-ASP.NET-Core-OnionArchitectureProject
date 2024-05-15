@@ -9,6 +9,7 @@
       "E-CommerceAPI.Persistence/1.0.0": {
         "dependencies": {
           "E-CommerceAPI.Application": "1.0.0",
+          "Google.Apis.Auth": "1.57.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
           "Microsoft.EntityFrameworkCore": "6.0.25",
@@ -831,7 +832,6 @@
           "FluentValidation": "11.9.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.0",
-          "Google.Apis.Auth": "1.57.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.AspNetCore.Http": "2.2.2",
