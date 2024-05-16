@@ -17,9 +17,12 @@
    - Viewing Product List
    - Creating an Order
 5. Technical Details
-   - .NET Framework Pros and Cons
+   - .NET Framework 
    - Onion Architecture Implementation
    - CQRS and Mediator Design Utilization
+   - Authentication with JWT Token and Rerfresh Token
+   - Login with Google and Facebook
+   - Files are uploaded to Microsoft Azure storage
 6. Example Code Snippets
    - Command or Query Processing
    - Managing Commands and Queries using Mediator
@@ -30,6 +33,7 @@
 8. Sources
    - Sources of the technologies and designs used
    - Azure Blob Storage Service
+   - Google Apis Auth
 
 
 
@@ -55,9 +59,12 @@ ________________________________________________________________________________
    - Bütün Məhsulların Siyahısını Görüntüləmək
    - Sifariş Yaratma Əməliyyatı
 5. Texniki Detallar
-   - .NET Framework-ün Üstünlükləri və Mənfi Tərəfləri
+   - .NET Framework-ün 
    - Soğan Memarisi Tətbiqi
    - CQRS və Mediator Dizaynının Kodda İstifadəsi
+   - Google və Facebook ilə daxil olmaq
+   - JWT Token ilə autentifikasiya
+   - Fayllar Microsoft Azure yaddaşına yüklənir
 6. Nümunə Kod Qarışlar
    - Bir Əmrin və Sorğunun Necə İşləndiyi
    - Mediator İstifadəsi ilə Əmr və Sorğuların İdarə Olunması
