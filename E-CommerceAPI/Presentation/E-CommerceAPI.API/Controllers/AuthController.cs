@@ -1,6 +1,7 @@
 ﻿using E_CommerceAPI.Application.Features.Commands.AppUser.FacbookLogin;
 using E_CommerceAPI.Application.Features.Commands.AppUser.GoogleLogin;
 using E_CommerceAPI.Application.Features.Commands.AppUser.LoginUser;
+using E_CommerceAPI.Application.Features.Commands.AppUser.RefreshTokenLogin;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,6 @@ namespace E_CommerceAPI.API.Controllers
         {
             _mediator = mediator;
         }
-
         [HttpPost("[action]")]
         public async Task<IActionResult> Login(LoginUserCommandRequest loginUserCommandRequest)
         {
@@ -24,20 +24,27 @@ namespace E_CommerceAPI.API.Controllers
             return Ok(response);
         }
 
+        [HttpGet("[action]")]
+        public async Task<IActionResult> RefreshTokenLogin([FromForm]RefreshTokenLoginCommandRequest refreshTokenLoginCommandRequest)
+        {
+            RefreshTokenLoginCommandResponse response = await _mediator.Send(refreshTokenLoginCommandRequest);
+            return Ok(response);
+        }
+
         [HttpPost("google-login")]
         public async Task<IActionResult> GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest)
         {
             GoogleLoginCommandResponse response = await _mediator.Send(googleLoginCommandRequest);
-
             return Ok(response);
         }
 
-        [HttpPost("facbook-login")]
-        public async Task<IActionResult> FacbookLogin(FacbookLoginCommandRequest facbookLoginCommandRequest)
+        [HttpPost("facebook-login")]
+        public async Task<IActionResult> FacebookLogin(FacebookLoginCommandRequest facebookLoginCommandRequest)
         {
-            FacbookLoginCommandResponse response = await _mediator.Send(facbookLoginCommandRequest);
-
+            FacebookLoginCommandResponse response = await _mediator.Send(facebookLoginCommandRequest);
             return Ok(response);
         }
+
     }
 }
+

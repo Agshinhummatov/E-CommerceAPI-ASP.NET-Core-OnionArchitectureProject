@@ -1,5 +1,6 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Services;
 using E_CommerceAPI.Application.DTOs.User;
+using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUser.CreateUser;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
@@ -40,6 +41,18 @@ namespace E_CommerceAPI.Persistence.Services
                     response.Message += $"{error.Code} - {error.Description}\n";
 
             return response;
+        }
+
+        public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accsessTokenDate, int addOnAccsessTokenDate)
+        {
+    
+            if (user != null)
+            {
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenEndDate = accsessTokenDate.AddSeconds(addOnAccsessTokenDate); // esas tokeninde uzerine vereceyimiz paramere uygun olaraqda refershtokenin vaxtini veririk
+                await _userManager.UpdateAsync(user);
+            }else
+            throw new NotFoundUserExeption();
         }
     }
 }

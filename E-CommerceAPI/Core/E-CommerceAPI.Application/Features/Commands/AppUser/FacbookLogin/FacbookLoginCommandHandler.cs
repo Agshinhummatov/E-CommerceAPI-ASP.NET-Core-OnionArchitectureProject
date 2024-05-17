@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.AppUser.FacbookLogin
 {
-    public class FacbookLoginCommandHandler : IRequestHandler<FacbookLoginCommandRequest, FacbookLoginCommandResponse>
+    public class FacbookLoginCommandHandler : IRequestHandler<FacebookLoginCommandRequest, FacebookLoginCommandResponse>
     {
         readonly IAuthService _authService;
 
@@ -23,9 +23,9 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUser.FacbookLogin
             _authService = authService;
         }
 
-        public async Task<FacbookLoginCommandResponse> Handle(FacbookLoginCommandRequest request, CancellationToken cancellationToken)
+        public async Task<FacebookLoginCommandResponse> Handle(FacebookLoginCommandRequest request, CancellationToken cancellationToken)
         {
-            var token  = await _authService.FacbookLoginAsync(request.AuthToken,15);
+            var token = await _authService.FacebookLoginAsync(request.AuthToken, 15);
             return new()
             {
                 Token = token

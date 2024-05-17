@@ -8,6 +8,7 @@ namespace E_CommerceAPI.Application.Abstractions.Token
 {
     public interface ITokenHandler
     {
-       DTOs.Token  CreateAccessToken( int second);
+        DTOs.Token CreateAccessToken(int second);
+        string CreateRefreshToken();
     }
 }

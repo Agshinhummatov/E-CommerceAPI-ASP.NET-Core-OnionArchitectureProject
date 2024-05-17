@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.AppUser.FacbookLogin
 {
-    public class FacbookLoginCommandRequest : IRequest<FacbookLoginCommandResponse>
+    public class FacebookLoginCommandRequest : IRequest<FacebookLoginCommandResponse>
     {
         public string AuthToken { get; set; }
     }

@@ -8,6 +8,7 @@ using E_CommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -26,21 +27,24 @@ namespace E_CommerceAPI.Persistence.Services
         readonly UserManager<Domain.Entities.Identity.AppUser> _userManager;
         readonly ITokenHandler _tokenHandler;
         readonly SignInManager<AppUser> _signInManager;
+        readonly IUserService _userService;
         public AuthService(IHttpClientFactory httpClientFactory,
             IConfiguration configuration,
             UserManager<Domain.Entities.Identity.AppUser> userManager,
             ITokenHandler tokenHandler,
-            SignInManager<AppUser> signInManager)
+            SignInManager<AppUser> signInManager,
+            IUserService userService)
         {
             _httpClient = httpClientFactory.CreateClient();
             _configuration = configuration;
             _userManager = userManager;
             _tokenHandler = tokenHandler;
             _signInManager = signInManager;
+            _userService = userService;
         }
-        async Task<Token> CreateUserExtarnalAsync(AppUser user, string name,string email,UserLoginInfo info ,int accessTokenLifeTime)
-        {
 
+        async Task<Token> CreateUserExternalAsync(AppUser user, string email, string name, UserLoginInfo info, int accessTokenLifeTime)
+        {
             bool result = user != null;
             if (user == null)
             {
@@ -63,18 +67,20 @@ namespace E_CommerceAPI.Persistence.Services
             {
                 await _userManager.AddLoginAsync(user, info); //AspNetUserLogins
 
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime); // access tokeni interfacin icine gonderrik bu methoduda cagiran method icine deyerini accesin vaxtini gondermelidir
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
             }
             throw new Exception("Invalid external authentication.");
         }
 
 
-        public async Task<Token> FacbookLoginAsync(string authToken, int accessTokenLifeTime)
+        public async Task<Token> FacebookLoginAsync(string authToken, int accessTokenLifeTime)
         {
+            string accessTokenResponse = await _httpClient.GetStringAsync($"https://graph.facebook.com/oauth/access_token?client_id={_configuration["ExternalLoginSettings:Facebook:Client_ID"]}&client_secret={_configuration["ExternalLoginSettings:Facebook:Client_Secret"]}&grant_type=client_credentials");
 
-            string accessTokenResponse = await _httpClient.GetStringAsync($"https://graph.facebook.com/oauth/access_token?client_id={_configuration["ExternalLoginSettings:Facbook:Client_ID"]}&client_secret={_configuration["ExternalLoginSettings:Facbook:Client_Secret"]}&grant_type=client_credentials");
             FacebookAccessTokenResponse? facebookAccessTokenResponse = JsonSerializer.Deserialize<FacebookAccessTokenResponse>(accessTokenResponse);
+
             string userAccessTokenValidation = await _httpClient.GetStringAsync($"https://graph.facebook.com/debug_token?input_token={authToken}&access_token={facebookAccessTokenResponse?.AccessToken}");
 
             FacebookUserAccessTokenValidation? validation = JsonSerializer.Deserialize<FacebookUserAccessTokenValidation>(userAccessTokenValidation);
@@ -88,30 +94,26 @@ namespace E_CommerceAPI.Persistence.Services
                 var info = new UserLoginInfo("FACEBOOK", validation.Data.UserId, "FACEBOOK");
                 Domain.Entities.Identity.AppUser user = await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
 
-              return  await CreateUserExtarnalAsync(user,userInfo.Email,userInfo.Name,info,accessTokenLifeTime);
-
+                return await CreateUserExternalAsync(user, userInfo.Email, userInfo.Name, info, accessTokenLifeTime);
             }
             throw new Exception("Invalid external authentication.");
-
-
         }
 
-        public async Task<Token> GoogleLoginAsync(string idToken,int accessTokenLifeTime)
+        public async Task<Token> GoogleLoginAsync(string idToken, int accessTokenLifeTime)
         {
             var settings = new GoogleJsonWebSignature.ValidationSettings()
             {
-                Audience = new List<string> {_configuration["ExternalLoginSettings:Google:Client_ID"]}
+                Audience = new List<string> { _configuration["ExternalLoginSettings:Google:Client_ID"] }
             };
 
             var payload = await GoogleJsonWebSignature.ValidateAsync(idToken, settings);
 
             var info = new UserLoginInfo("GOOGLE", payload.Subject, "GOOGLE");
+            Domain.Entities.Identity.AppUser user = await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
 
-            await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
-            Domain.Entities.Identity.AppUser user = await _userManager.FindByLoginAsync(info.LoginProvider,
-                info.ProviderKey); // varsa eger login ol 
-            return await CreateUserExtarnalAsync(user, payload.Email, payload.Name, info, accessTokenLifeTime);
+            return await CreateUserExternalAsync(user, payload.Email, payload.Name, info, accessTokenLifeTime);
         }
+
 
         public async Task<Token> LoginAsync(string usernameOrEmail, string password, int accessTokenLifeTime)
         {
@@ -127,7 +129,7 @@ namespace E_CommerceAPI.Persistence.Services
                 // jwt yi burda yaratmaliyiq
 
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime); // tocken yaradan methodumzu burda cagiriq ve icine deqiqesini gonderirik
-
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
 
             }
@@ -138,6 +140,20 @@ namespace E_CommerceAPI.Persistence.Services
             //};
 
             throw new AuthenticationErrorException();
+        }
+
+        public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
+        {
+            AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
+            if(user != null && user?.RefreshTokenEndDate > DateTime.UtcNow )
+            {
+                Token token = _tokenHandler.CreateAccessToken(15);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);
+                return token;
+            }
+            else
+            throw new NotFoundUserExeption();
+
         }
     }
 }

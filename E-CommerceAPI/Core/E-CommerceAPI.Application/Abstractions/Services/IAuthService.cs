@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Abstractions.Services
 {
-    public interface IAuthService : IExternalAuthentications, IInternalAuthentications
+    public interface IAuthService : IExternalAuthentication, IInternalAuthentication
     {
        
 

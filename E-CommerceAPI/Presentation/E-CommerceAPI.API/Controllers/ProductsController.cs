@@ -64,7 +64,6 @@ namespace E_CommerceAPI.API.Controllers
         {
            UpdateProductCommandResponce responce = await _mediator.Send(updateProductCommandRequset);
             return Ok();
-
         }
 
         
@@ -79,14 +78,9 @@ namespace E_CommerceAPI.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload([FromQuery] UploadProductImageCommandRequest uploadProductImageCommandRequest )
         {
-
             uploadProductImageCommandRequest.Files = Request.Form.Files;
             UploadProductImageCommandResponse uploadProductImageCommandResponce = await _mediator.Send(uploadProductImageCommandRequest);
-
             return Ok();
-
-
-
         }
 
 
