@@ -95,10 +95,15 @@ C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAP
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Core.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\MediatR.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -121,6 +126,7 @@ C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAP
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Npgsql.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -178,9 +184,3 @@ C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAP
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.pdb
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.genruntimeconfig.cache
 C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\ref\E-CommerceAPI.API.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Auth.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Google.Apis.Core.dll
-C:\Users\Acer\Desktop\E-CommerceAPI\E-CommerceAPI-Onionarchitecture\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\Newtonsoft.Json.dll
