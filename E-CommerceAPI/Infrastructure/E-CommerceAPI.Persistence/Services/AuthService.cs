@@ -67,7 +67,7 @@ namespace E_CommerceAPI.Persistence.Services
             {
                 await _userManager.AddLoginAsync(user, info); //AspNetUserLogins
 
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime); // access tokeni interfacin icine gonderrik bu methoduda cagiran method icine deyerini accesin vaxtini gondermelidir
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // access tokeni interfacin icine gonderrik bu methoduda cagiran method icine deyerini accesin vaxtini gondermelidir
                 await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
             }
@@ -128,7 +128,7 @@ namespace E_CommerceAPI.Persistence.Services
             {
                 // jwt yi burda yaratmaliyiq
 
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime); // tocken yaradan methodumzu burda cagiriq ve icine deqiqesini gonderirik
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // tocken yaradan methodumzu burda cagiriq ve icine deqiqesini gonderirik
                 await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
 
@@ -147,7 +147,7 @@ namespace E_CommerceAPI.Persistence.Services
             AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
             if(user != null && user?.RefreshTokenEndDate > DateTime.UtcNow )
             {
-                Token token = _tokenHandler.CreateAccessToken(15);
+                Token token = _tokenHandler.CreateAccessToken(15,user);
                 await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);
                 return token;
             }

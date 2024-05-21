@@ -1,3 +1,4 @@
+using E_CommerceAPI.API.Configurations.ColumnWriters;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validations.Products;
 using E_CommerceAPI.Infrastructure;
@@ -7,7 +8,14 @@ using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.IdentityModel.Tokens;
+using NpgsqlTypes;
+using Serilog;
+using Serilog.Context;
+using Serilog.Core;
+using Serilog.Sinks.PostgreSQL;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,6 +43,35 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
           .AllowAnyHeader()
           .AllowAnyMethod()
 ));
+
+Logger log = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("log/log.txt")
+    .WriteTo.PostgreSQL(builder.Configuration.GetConnectionString("PostgreSQL"),"logs",
+    needAutoCreateTable : true, columnOptions: new Dictionary<string, ColumnWriterBase>
+    {
+           {"message", new RenderedMessageColumnWriter(NpgsqlDbType.Text)},
+            {"message_template", new MessageTemplateColumnWriter(NpgsqlDbType.Text)},
+            {"level", new LevelColumnWriter(true , NpgsqlDbType.Varchar)},
+            {"time_stamp", new TimestampColumnWriter(NpgsqlDbType.Timestamp)},
+            {"exception", new ExceptionColumnWriter(NpgsqlDbType.Text)},
+            {"log_event", new LogEventSerializedColumnWriter(NpgsqlDbType.Json)},
+            {"user_name", new UsernameColumnWriter()} // cutsum ozumuzun yaratdiqimiz classdi
+    })
+    .Enrich.FromLogContext() // contexden xairci propetilere catmaq ucun istifade edirik bunu yeni conexte qoyduqumuz username cata bilirik
+    .MinimumLevel.Information()
+    .CreateLogger();
+
+builder.Host.UseSerilog(log);
+
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+    logging.RequestHeaders.Add("sec-ch-ua");
+    logging.MediaTypeOptions.AddText("application/javascript");
+    logging.RequestBodyLogLimit = 4096;
+    logging.ResponseBodyLogLimit = 4096;
+});
 
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()).AddFluentValidation(configuration => configuration
 .RegisterValidatorsFromAssemblyContaining<CreateProductValidator>()).ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
@@ -64,7 +101,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = builder.Configuration["Token:Audience"],
             ValidIssuer = builder.Configuration["Token:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
-            LifetimeValidator = (notBefore,expires, securityToken,validationParameters) => expires != null ? expires > DateTime.UtcNow : false  // burds ise acces tokenimiz muddetini methodla gonderecem ona uygun edirem nece saniye olacaq deye bu namespacededi  E_CommerceAPI.Infrastructure.Services.Token
+            LifetimeValidator = (notBefore,expires, securityToken,validationParameters) => expires != null ? expires > DateTime.UtcNow : false , // burds ise acces tokenimiz muddetini methodla gonderecem ona uygun edirem nece saniye olacaq deye bu namespacededi  E_CommerceAPI.Infrastructure.Services.Token
+            NameClaimType = ClaimTypes.Name //JWT üzerinde Name claimne karþýlýk gelen deðeri User.Identity.Name propertysinden elde edebiliriz.
         };
     });
 
@@ -82,7 +120,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 
-
+app.UseSerilogRequestLogging(); // seri logun cagirikqi midalware islesin
+app.UseHttpLogging(); // midilwreni cagiriq 
 app.UseCors(); // AddCors() method isledir
 
 
@@ -90,6 +129,13 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication(); // midilawaredir bunlar
 app.UseAuthorization(); // midilawaredir bunlar
+
+app.Use(async(context, next) =>
+{
+    var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identity.Name : null; // birince deyiremki user nul deyilse Identity null deyilse eger IsAuthenticated olubsa yeni daxil olubsa ve gelen deyerler null deyilse ve ya ture ise  context.User.Identity.Name ver yox eger null ise : null geri donder
+    LogContext.PushProperty("user_name", username); // burda ise men user_name tabline artiq yaxaldiqim userin namemini puhs edirem gedib dusecek sqlme
+    await next();
+});
 
 app.MapControllers();
 

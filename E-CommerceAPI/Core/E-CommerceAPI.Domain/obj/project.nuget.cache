@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ud1uUK0c0KqYHR+yFAXH2W2ShxBmJxacd0zSjK8uLc8bPMgzKFbyhzKrCUS2g7kjecfWbf7XlUC9sx4K4uDu+A==",
+  "dgSpecHash": "radcbORbQN0joPeXdID44aTtifVgJwzFtXKxJsl4im2QywLq7vc7exUegRE9QbOe4UtxHaImh1T/X6pC4Q9ewA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

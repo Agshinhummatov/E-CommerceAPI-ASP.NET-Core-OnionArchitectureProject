@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDVNb23X0QbKQcAs6qisr/GeYGTUPgJrWLqAceGldhTvChEZQGMEr5SODmCGHF6q4HHdpFO+yjA3C5gUcm6CGg==",
+  "dgSpecHash": "yby6do50Im/9TSe9fIB63pR8ilftzULCbhOKVNNyH9ZutXBEi0OTtx9G/616Dswch1RR2838kQV0cn/+fguOQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

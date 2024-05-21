@@ -1,10 +1,12 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Token;
+using E_CommerceAPI.Domain.Entities.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +23,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Token
         }
 
 
-        public Application.DTOs.Token CreateAccessToken(int second)
+        public Application.DTOs.Token CreateAccessToken(int second, AppUser user)
         {
             Application.DTOs.Token token = new();
             // Simmetrik Təhlükəsizlik Açarı  SecurityKey in simetricini aliram
@@ -41,7 +43,8 @@ namespace E_CommerceAPI.Infrastructure.Services.Token
                 issuer : _configuration["Token:Issuer"],
                 expires : token.Expiration,
                 notBefore : DateTime.UtcNow, // ne zaman tokeni olsudursun ve devereye girsin? ele hemen deqiqe method bu name spacdedi E_CommerceAPI.Infrastructure.Services.Token
-                signingCredentials : signingCredentials
+                signingCredentials : signingCredentials,
+                claims : new List<Claim> { new(ClaimTypes.Name, user.UserName) } // user name jwt tokende verecek program csde bunun qarsliqini yazacam
                 );
 
             // token olsdurucu sinifindan bir ornek alalim

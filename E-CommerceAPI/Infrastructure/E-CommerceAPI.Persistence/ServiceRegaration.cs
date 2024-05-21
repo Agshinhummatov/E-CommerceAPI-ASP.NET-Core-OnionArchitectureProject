@@ -16,7 +16,7 @@ namespace E_CommerceAPI.Persistence
         public static void AddPresistenceServices(this IServiceCollection services)
         {
 
-            services.AddDbContext<ECommerceAPIDbContext>(options => options.UseSqlServer(Configuration.ConnectionString) ,ServiceLifetime.Singleton);
+            services.AddDbContext<ECommerceAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString) ,ServiceLifetime.Singleton);
 
             services.AddIdentity<AppUser,AppRole>(options => // burda yoxlamalar apaririq password ve diger movuzlarda
             {  

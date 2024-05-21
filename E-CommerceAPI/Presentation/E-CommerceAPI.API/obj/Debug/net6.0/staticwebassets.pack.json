@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
+      "Id": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
       "PackagePath": "staticwebassets\\photo-images"
     },
     {
-      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
+      "Id": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
       "PackagePath": "staticwebassets\\photo-images\\indirdf.png"
     },
     {
-      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\photo.png",
+      "Id": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\photo.png",
       "PackagePath": "staticwebassets\\photo-images\\photo.png"
     },
     {
-      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png",
+      "Id": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png",
       "PackagePath": "staticwebassets\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png"
     },
     {
-      "Id": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png",
+      "Id": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png",
       "PackagePath": "staticwebassets\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png"
     },
     {

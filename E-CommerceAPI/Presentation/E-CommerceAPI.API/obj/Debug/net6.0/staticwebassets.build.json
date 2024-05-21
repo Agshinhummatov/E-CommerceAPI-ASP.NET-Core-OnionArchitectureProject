@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "04jgV2lEY0UxHslMML8QOlN1ZirDxHxsYsuxmvDmS1k=",
+  "Hash": "RQrvI8Pz8FZ75rn5RpAGGgreXNnA8i9IPTuQ+rZjlCg=",
   "Source": "E-CommerceAPI.API",
   "BasePath": "_content/E-CommerceAPI.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "E-CommerceAPI.API\\wwwroot",
       "Source": "E-CommerceAPI.API",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
+      "Identity": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\Files",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "RelativePath": "photo-images/Files",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\photo-images\\Files"
     },
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\indirdf.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "RelativePath": "photo-images/indirdf.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\photo-images\\indirdf.png"
     },
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\photo.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\photo-images\\photo.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "RelativePath": "photo-images/photo.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\photo-images\\photo.png"
     },
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "RelativePath": "resource/files/9004715_cross_delete_remove_cancel_icon - Copy.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon - Copy.png"
     },
     {
-      "Identity": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png",
+      "Identity": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\resource\\files\\9004715_cross_delete_remove_cancel_icon.png",
       "SourceId": "E-CommerceAPI.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Acer\\Desktop\\E-CommerceAPI\\E-CommerceAPI-Onionarchitecture\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\wwwroot\\",
       "BasePath": "_content/E-CommerceAPI.API",
       "RelativePath": "resource/files/9004715_cross_delete_remove_cancel_icon.png",
       "AssetKind": "All",
