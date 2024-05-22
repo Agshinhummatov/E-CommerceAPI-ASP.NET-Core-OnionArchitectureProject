@@ -4,7 +4,6 @@ using E_CommerceAPI.Application.Validations.Products;
 using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
 using E_CommerceAPI.Infrastructure.Services.Storage.Azure;
-using E_CommerceAPI.Infrastructure.Services.Storage.Local;
 using E_CommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -58,6 +57,7 @@ Logger log = new LoggerConfiguration()
             {"log_event", new LogEventSerializedColumnWriter(NpgsqlDbType.Json)},
             {"user_name", new UsernameColumnWriter()} // cutsum ozumuzun yaratdiqimiz classdi
     })
+    .WriteTo.Seq(builder.Configuration["Seq:ServerURL"])
     .Enrich.FromLogContext() // contexden xairci propetilere catmaq ucun istifade edirik bunu yeni conexte qoyduqumuz username cata bilirik
     .MinimumLevel.Information()
     .CreateLogger();
