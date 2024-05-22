@@ -1,4 +1,5 @@
 using E_CommerceAPI.API.Configurations.ColumnWriters;
+using E_CommerceAPI.API.Extensions;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validations.Products;
 using E_CommerceAPI.Infrastructure;
@@ -116,6 +117,10 @@ if (app.Environment.IsDevelopment())
 }
 
 
+app.ConfigureExceptionHandler<Program>(app.Services.GetRequiredService<ILogger<Program>>());
+
+
+//app.UseExceptionHandler();
 
 
 app.UseStaticFiles();
