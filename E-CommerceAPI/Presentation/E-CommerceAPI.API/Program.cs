@@ -6,6 +6,7 @@ using E_CommerceAPI.Infrastructure;
 using E_CommerceAPI.Infrastructure.Filters;
 using E_CommerceAPI.Infrastructure.Services.Storage.Azure;
 using E_CommerceAPI.Persistence;
+using E_CommerceAPI.SignalR;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;
@@ -28,15 +29,11 @@ builder.Services.AddInfrastructureServices();
 
 builder.Services.AddApplicationServices();
 
+builder.Services.AddSiganRServices();
+
 builder.Services.AddStorage<AzureStorage>();// burda bildiremki filerim hansi localdanmi istifade edecek yoxsa azuredenmi
 
 
-
-
-//builder.Services.AddDbContext<EcommerceAPIDbContext>(opt =>
-//{
-//    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-//});
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("http://localhost:4200", "https://localhost:4200")
@@ -143,5 +140,7 @@ app.Use(async(context, next) =>
 });
 
 app.MapControllers();
+
+app.MapHubs();
 
 app.Run();
