@@ -11,7 +11,8 @@ namespace E_CommerceAPI.SignalR
 {
     public static class ServiceRegaration
     {
-        public static void AddSiganRServices(this IServiceCollection collection)
+
+        public static void AddSignalRServices(this IServiceCollection collection)
         {
             collection.AddTransient<IProductHubService, ProductHubService>();
             collection.AddSignalR();

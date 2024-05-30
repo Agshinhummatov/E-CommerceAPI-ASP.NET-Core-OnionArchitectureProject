@@ -29,7 +29,7 @@ builder.Services.AddInfrastructureServices();
 
 builder.Services.AddApplicationServices();
 
-builder.Services.AddSiganRServices();
+builder.Services.AddSignalRServices();
 
 builder.Services.AddStorage<AzureStorage>();// burda bildiremki filerim hansi localdanmi istifade edecek yoxsa azuredenmi
 
@@ -38,7 +38,7 @@ builder.Services.AddStorage<AzureStorage>();// burda bildiremki filerim hansi lo
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("http://localhost:4200", "https://localhost:4200")
           .AllowAnyHeader()
-          .AllowAnyMethod()
+          .AllowAnyMethod().AllowCredentials()
 ));
 
 Logger log = new LoggerConfiguration()

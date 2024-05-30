@@ -11,9 +11,9 @@ namespace E_CommerceAPI.SignalR.HubSevices
 {
     public class ProductHubService : IProductHubService
     {
-        readonly IHubContext<PrdocutHub> _hubContext;
+        readonly IHubContext<ProductHub> _hubContext;
 
-        public ProductHubService(IHubContext<PrdocutHub> hubContext)
+        public ProductHubService(IHubContext<ProductHub> hubContext)
         {
             _hubContext = hubContext;
         }
@@ -21,7 +21,6 @@ namespace E_CommerceAPI.SignalR.HubSevices
         public async Task ProductAddedMessageAsync(string message)
         {
             await _hubContext.Clients.All.SendAsync(ReceiveFunctionNames.ProductAddedMessage, message);
-
         }
     }
 }

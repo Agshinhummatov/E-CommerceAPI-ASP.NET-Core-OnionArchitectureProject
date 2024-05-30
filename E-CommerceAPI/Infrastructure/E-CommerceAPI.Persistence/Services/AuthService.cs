@@ -68,7 +68,7 @@ namespace E_CommerceAPI.Persistence.Services
                 await _userManager.AddLoginAsync(user, info); //AspNetUserLogins
 
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // access tokeni interfacin icine gonderrik bu methoduda cagiran method icine deyerini accesin vaxtini gondermelidir
-                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
             }
             throw new Exception("Invalid external authentication.");
@@ -129,7 +129,7 @@ namespace E_CommerceAPI.Persistence.Services
                 // jwt yi burda yaratmaliyiq
 
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // tocken yaradan methodumzu burda cagiriq ve icine deqiqesini gonderirik
-                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 15);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
 
             }

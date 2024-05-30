@@ -274,9 +274,11 @@ C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProje
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Domain.dll
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Infrastructure.dll
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Persistence.dll
+C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.SignalR.dll
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Application.pdb
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Infrastructure.pdb
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Persistence.pdb
+C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.SignalR.pdb
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\E-CommerceAPI.Domain.pdb
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.csproj.AssemblyReference.cache
 C:\Users\Acer\Desktop\APIClone\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.GeneratedMSBuildEditorConfig.editorconfig

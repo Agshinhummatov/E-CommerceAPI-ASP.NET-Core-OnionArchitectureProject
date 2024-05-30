@@ -1,4 +1,5 @@
-﻿using E_CommerceAPI.Application.Repositories;
+﻿using E_CommerceAPI.Application.Abstractions.Hubs;
+using E_CommerceAPI.Application.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,12 @@ namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
     {
         readonly IProductWriteRepository _productWriteRepository;
 
-        public CreateProductCommandHandler(IProductWriteRepository productWriteRepository)
+        readonly IProductHubService _productHubService;
+
+        public CreateProductCommandHandler(IProductWriteRepository productWriteRepository, IProductHubService productHubService)
         {
             _productWriteRepository = productWriteRepository;
+            _productHubService = productHubService;
         }
 
         public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequset request, CancellationToken cancellationToken)
@@ -28,6 +32,7 @@ namespace E_CommerceAPI.Application.Features.Commands.Product.CreateProduct
             });
 
             await _productWriteRepository.SaveAsync();
+            await _productHubService.ProductAddedMessageAsync($"{request.Name} isminde ürün eklenmiştir.");
 
             return new();
         }

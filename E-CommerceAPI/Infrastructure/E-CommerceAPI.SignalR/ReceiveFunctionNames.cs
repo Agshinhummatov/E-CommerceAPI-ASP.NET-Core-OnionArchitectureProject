@@ -10,4 +10,5 @@ namespace E_CommerceAPI.SignalR
     {
         public const string ProductAddedMessage = "receiveProductAddedMessage";
     }
+
 }
