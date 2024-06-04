@@ -25,7 +25,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
             var totalProductCount = _productReadRepository.GetAll(false).Count();
 
             var products = _productReadRepository.GetAll(false).Skip(request.Page * request.Size).Take(request.Size)
-                .Include(p => p.ProductImagesFile)
+                .Include(p => p.ProductImageFiles)
                 .Select(p => new
             {
                 p.Id,
@@ -34,7 +34,7 @@ namespace E_CommerceAPI.Application.Features.Queries.Product.GetAllProduct
                 p.Stock,
                 p.CreatedDate,
                 p.UpdatedDate,
-                    p.ProductImagesFile
+                    p.ProductImageFiles
 
                 }).ToList();
 

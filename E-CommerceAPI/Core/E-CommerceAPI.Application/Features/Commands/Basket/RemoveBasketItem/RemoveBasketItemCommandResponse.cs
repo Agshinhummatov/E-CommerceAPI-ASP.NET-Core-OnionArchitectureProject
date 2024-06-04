@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceAPI.Application.Features.Commands.Product.RemoveProduct
+namespace E_CommerceAPI.Application.Features.Commands.Basket.RemoveBasketItem
 {
-    public class RemoveProductCommandResponce 
+    public class RemoveBasketItemCommandResponse
     {
-        
     }
 }

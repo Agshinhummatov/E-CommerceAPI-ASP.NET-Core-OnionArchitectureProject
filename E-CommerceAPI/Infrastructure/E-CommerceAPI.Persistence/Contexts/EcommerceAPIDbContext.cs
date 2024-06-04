@@ -3,6 +3,7 @@ using E_CommerceAPI.Domain.Entities.Common;
 using E_CommerceAPI.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,8 +28,24 @@ namespace E_CommerceAPI.Persistence.Contexts
 
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
 
-        public DbSet<InvoiceFile> invoiceFiles { get; set; }
+        public DbSet<InvoiceFile> InvoiceFiles { get; set; }
 
+
+        public DbSet<Basket> Baskets { get; set; } 
+        public DbSet<BasketItem> BasketItems { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Order>().HasKey(b => b.Id);
+
+            builder.Entity<Basket>()
+                .HasOne(b => b.Order)
+                .WithOne(o => o.Basket).
+                HasForeignKey<Order>(b => b.Id);
+
+            base.OnModelCreating(builder);
+        }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

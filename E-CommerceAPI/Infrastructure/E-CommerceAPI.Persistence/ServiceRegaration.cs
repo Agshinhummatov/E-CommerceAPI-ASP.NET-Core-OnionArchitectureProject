@@ -41,7 +41,13 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IInvoiceFileReadRepository,InvoiceFileReadRepository>();
             services.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
             services.AddScoped<IProductImageFileReadRepository, ProductImageFileReadRepository>();
-            services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
+            services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>(); 
+            services.AddScoped<IBasketWriteRepository, BasketWriteRepository>(); 
+            services.AddScoped<IBasketReadRepository, BasketReadRepository>();
+            services.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
+            services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>(); 
+          
+
 
 
 
@@ -49,6 +55,7 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IExternalAuthentication, AuthService>();
             services.AddScoped<IInternalAuthentication, AuthService>();
+            services.AddScoped<IBasketService, BasketService>();
 
 
 

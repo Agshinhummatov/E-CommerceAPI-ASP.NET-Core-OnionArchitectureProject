@@ -65,7 +65,7 @@ namespace E_CommerceAPI.API.Controllers
         [Authorize(AuthenticationSchemes = "Admin")]
         public async Task<IActionResult> Put([FromBody]UpdateProductCommandRequset updateProductCommandRequset)
         {
-           UpdateProductCommandResponce responce = await _mediator.Send(updateProductCommandRequset);
+           UpdateProductCommandResponse responce = await _mediator.Send(updateProductCommandRequset);
             return Ok();
         }
 
@@ -74,7 +74,7 @@ namespace E_CommerceAPI.API.Controllers
         [Authorize(AuthenticationSchemes = "Admin")]
         public async Task<IActionResult> Delete([FromRoute] RemoveProductCommandRequset removeProductCommandRequset)
         {
-            RemoveProductCommandResponce responce = await _mediator.Send(removeProductCommandRequset);
+            RemoveProductCommandResponse responce = await _mediator.Send(removeProductCommandRequset);
             return Ok();
         }
 

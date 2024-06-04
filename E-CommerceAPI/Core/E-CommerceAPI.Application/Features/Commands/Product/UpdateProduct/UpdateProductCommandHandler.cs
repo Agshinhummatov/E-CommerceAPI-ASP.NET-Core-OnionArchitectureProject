@@ -4,7 +4,7 @@ using P = E_CommerceAPI.Domain.Entities;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.UpdateProduct
 {
-    public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommandRequset, UpdateProductCommandResponce>
+    public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommandRequset, UpdateProductCommandResponse>
     {
         readonly IProductReadRepository _productReadRepository;
         readonly IProductWriteRepository _productWriteRepository;
@@ -20,7 +20,7 @@ namespace E_CommerceAPI.Application.Features.Commands.Product.UpdateProduct
             _productWriteRepository = productWriteRepository;
         }
 
-        public async Task<UpdateProductCommandResponce> Handle(UpdateProductCommandRequset request, CancellationToken cancellationToken)
+        public async Task<UpdateProductCommandResponse> Handle(UpdateProductCommandRequset request, CancellationToken cancellationToken)
         {
             P.Product product = await _productReadRepository.GetByIdAsync(request.Id);
 

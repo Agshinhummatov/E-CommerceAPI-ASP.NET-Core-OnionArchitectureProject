@@ -76,6 +76,7 @@ namespace E_CommerceAPI.Persistence.Migrations
                     Storage = table.Column<string>(type: "text", nullable: false),
                     Discriminator = table.Column<string>(type: "text", nullable: false),
                     Price = table.Column<decimal>(type: "numeric", nullable: true),
+                    Showcase = table.Column<bool>(type: "boolean", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
@@ -231,15 +232,15 @@ namespace E_CommerceAPI.Persistence.Migrations
                 name: "ProductProductImageFile",
                 columns: table => new
                 {
-                    ProductImagesFileId = table.Column<Guid>(type: "uuid", nullable: false),
+                    ProductImageFilesId = table.Column<Guid>(type: "uuid", nullable: false),
                     ProductsId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductProductImageFile", x => new { x.ProductImagesFileId, x.ProductsId });
+                    table.PrimaryKey("PK_ProductProductImageFile", x => new { x.ProductImageFilesId, x.ProductsId });
                     table.ForeignKey(
-                        name: "FK_ProductProductImageFile_Files_ProductImagesFileId",
-                        column: x => x.ProductImagesFileId,
+                        name: "FK_ProductProductImageFile_Files_ProductImageFilesId",
+                        column: x => x.ProductImageFilesId,
                         principalTable: "Files",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);

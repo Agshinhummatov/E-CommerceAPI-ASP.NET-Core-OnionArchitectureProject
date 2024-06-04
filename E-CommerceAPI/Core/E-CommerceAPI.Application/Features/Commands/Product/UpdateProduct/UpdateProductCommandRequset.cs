@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.UpdateProduct
 {
-    public class UpdateProductCommandRequset : IRequest<UpdateProductCommandResponce>
+    public class UpdateProductCommandRequset : IRequest<UpdateProductCommandResponse>
     {
         public string Id { get; set; }
 

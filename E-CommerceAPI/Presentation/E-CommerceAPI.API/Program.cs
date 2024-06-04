@@ -23,6 +23,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddHttpContextAccessor(); // Clinte'den gelen request neticesinde olusturulan HttpContext nesnesine katmanlardaki class'lar uzerinde businnes logic erisebilmesini saglayan bir servicedir
 builder.Services.AddPresistenceServices();
 
 builder.Services.AddInfrastructureServices();

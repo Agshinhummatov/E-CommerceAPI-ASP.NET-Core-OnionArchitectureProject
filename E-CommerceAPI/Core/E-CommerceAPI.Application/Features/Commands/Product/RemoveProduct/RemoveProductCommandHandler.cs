@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_CommerceAPI.Application.Features.Commands.Product.RemoveProduct
 {
-    public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequset, RemoveProductCommandResponce>
+    public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequset, RemoveProductCommandResponse>
     {
         readonly IProductWriteRepository _productWriteRepository;
 
@@ -17,7 +17,7 @@ namespace E_CommerceAPI.Application.Features.Commands.Product.RemoveProduct
             _productWriteRepository = productWriteRepository;
         }
 
-        public async Task<RemoveProductCommandResponce> Handle(RemoveProductCommandRequset request, CancellationToken cancellationToken)
+        public async Task<RemoveProductCommandResponse> Handle(RemoveProductCommandRequset request, CancellationToken cancellationToken)
         {
 
             await _productWriteRepository.RemoveAsync(request.Id);
