@@ -22,5 +22,6 @@ namespace E_CommerceAPI.SignalR.HubSevices
         {
             await _hubContext.Clients.All.SendAsync(ReceiveFunctionNames.ProductAddedMessage, message);
         }
+
     }
 }

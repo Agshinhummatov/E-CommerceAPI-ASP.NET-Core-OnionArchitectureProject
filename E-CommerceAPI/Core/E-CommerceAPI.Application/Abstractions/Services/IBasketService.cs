@@ -17,5 +17,7 @@ namespace E_CommerceAPI.Application.Abstractions.Services
 
         public Task RemoveBasketItemAsync(string basketItemId);
 
+        public Basket? GetUserActiveBasket { get; }
+
     }
 }
