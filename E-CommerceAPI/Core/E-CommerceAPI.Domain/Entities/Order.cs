@@ -14,6 +14,8 @@ namespace E_CommerceAPI.Domain.Entities
         //public Guid BasketId { get; set; }
         public Basket Basket { get; set; }
 
+        public string OrderCode { get; set; }
+
         //public ICollection<Product> Products { get; set; }
 
 
