@@ -11,7 +11,9 @@ namespace E_CommerceAPI.Application.Abstractions.Services
     public interface IUserService
     {
         Task<CreateUserResponse> CreateAsync(CreateUser model);
-        Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accsessTokenDate, int addOnAccsessTokenDate);
+        Task UpdateRefreshTokenAsync(string refreshToken, AppUser user, DateTime accsessTokenDate, int addOnAccsessTokenDate);
+
+        Task UpdatePasswordAsync(string userId,string resetToken,string newPassword);
 
     }
 }

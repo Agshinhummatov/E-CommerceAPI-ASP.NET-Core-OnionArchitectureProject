@@ -2,9 +2,11 @@
 using E_CommerceAPI.Application.DTOs.User;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUser.CreateUser;
+using E_CommerceAPI.Application.Helpers;
 using E_CommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,7 +45,9 @@ namespace E_CommerceAPI.Persistence.Services
             return response;
         }
 
-        public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accsessTokenDate, int addOnAccsessTokenDate)
+  
+
+        public async Task UpdateRefreshTokenAsync(string refreshToken, AppUser user, DateTime accsessTokenDate, int addOnAccsessTokenDate)
         {
     
             if (user != null)
@@ -53,6 +57,22 @@ namespace E_CommerceAPI.Persistence.Services
                 await _userManager.UpdateAsync(user);
             }else
             throw new NotFoundUserExeption();
+        }
+
+
+        public async Task UpdatePasswordAsync(string userId, string resetToken, string newPassword)
+        {
+              AppUser user = await  _userManager.FindByIdAsync(userId);
+
+            if (user != null)
+            {
+                resetToken = resetToken.UrlDecode();
+                IdentityResult result = await _userManager.ResetPasswordAsync(user, resetToken, newPassword);
+                if (result.Succeeded)
+                    await _userManager.UpdateSecurityStampAsync(user); // burda ise  SecurityStampAsync colomnda olan securtiyi ezirik ve yenileyirik
+            }
+            else
+                throw new PasswordChangeFailedExeption();
         }
     }
 }

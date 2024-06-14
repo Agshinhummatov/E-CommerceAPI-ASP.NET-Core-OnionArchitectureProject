@@ -4,10 +4,12 @@ using E_CommerceAPI.Application.DTOs;
 using E_CommerceAPI.Application.DTOs.Facbook;
 using E_CommerceAPI.Application.Exceptions;
 using E_CommerceAPI.Application.Features.Commands.AppUser.LoginUser;
+using E_CommerceAPI.Application.Helpers;
 using E_CommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -28,12 +30,14 @@ namespace E_CommerceAPI.Persistence.Services
         readonly ITokenHandler _tokenHandler;
         readonly SignInManager<AppUser> _signInManager;
         readonly IUserService _userService;
+        readonly IMailService _mailService;
         public AuthService(IHttpClientFactory httpClientFactory,
             IConfiguration configuration,
             UserManager<Domain.Entities.Identity.AppUser> userManager,
             ITokenHandler tokenHandler,
             SignInManager<AppUser> signInManager,
-            IUserService userService)
+            IUserService userService,
+            IMailService mailService)
         {
             _httpClient = httpClientFactory.CreateClient();
             _configuration = configuration;
@@ -41,6 +45,7 @@ namespace E_CommerceAPI.Persistence.Services
             _tokenHandler = tokenHandler;
             _signInManager = signInManager;
             _userService = userService;
+            _mailService = mailService;
         }
 
         async Task<Token> CreateUserExternalAsync(AppUser user, string email, string name, UserLoginInfo info, int accessTokenLifeTime)
@@ -68,7 +73,7 @@ namespace E_CommerceAPI.Persistence.Services
                 await _userManager.AddLoginAsync(user, info); //AspNetUserLogins
 
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // access tokeni interfacin icine gonderrik bu methoduda cagiran method icine deyerini accesin vaxtini gondermelidir
-                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
+                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
             }
             throw new Exception("Invalid external authentication.");
@@ -129,7 +134,7 @@ namespace E_CommerceAPI.Persistence.Services
                 // jwt yi burda yaratmaliyiq
 
                 Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user); // tocken yaradan methodumzu burda cagiriq ve icine deqiqesini gonderirik
-                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
+                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);  /// burda iser usersevirce methodun icindeki methodumuzu cagiriq burdan geden user ve accesstoken ve accsessdate uzerine vereceyimiz deqiqe ve ya saniyeni gelib artiracaq yeni bunu addOnAccsessTokenDate
                 return token;
 
             }
@@ -148,12 +153,43 @@ namespace E_CommerceAPI.Persistence.Services
             if(user != null && user?.RefreshTokenEndDate > DateTime.UtcNow )
             {
                 Token token = _tokenHandler.CreateAccessToken(15,user);
-                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);
+                await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
                 return token;
             }
             else
             throw new NotFoundUserExeption();
 
+        }
+
+        public async Task PasswordResetAsync(string email)
+        {
+            AppUser user  = await _userManager.FindByEmailAsync(email);
+
+            if (user != null)
+            {
+                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+
+                resetToken =  resetToken.UrlEnocode();
+
+               await  _mailService.SendPasswordResetMailAsync(email,user.Id,resetToken);
+            }
+
+
+        }
+
+        public async Task<bool> VerifyResetTokenAsync(string resetToken, string userId)
+        {
+          AppUser user = await  _userManager.FindByIdAsync(userId);
+            if (user != null)
+            {
+
+                resetToken = resetToken.UrlDecode();
+               
+                return  await  _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider,"ResetPassword",resetToken);
+            }
+
+            return false;
         }
     }
 }

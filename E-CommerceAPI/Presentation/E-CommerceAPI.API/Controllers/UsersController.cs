@@ -3,6 +3,7 @@ using E_CommerceAPI.Application.Features.Commands.AppUser.CreateUser;
 using E_CommerceAPI.Application.Features.Commands.AppUser.FacbookLogin;
 using E_CommerceAPI.Application.Features.Commands.AppUser.GoogleLogin;
 using E_CommerceAPI.Application.Features.Commands.AppUser.LoginUser;
+using E_CommerceAPI.Application.Features.Commands.AppUser.UpdatePassword;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,11 +15,11 @@ namespace E_CommerceAPI.API.Controllers
     public class UsersController : ControllerBase
     {
         readonly IMediator _mediator;
-        readonly IMailService _mailService;
-        public UsersController(IMediator mediator, IMailService mailService)
+      
+        public UsersController(IMediator mediator)
         {
             _mediator = mediator;
-            _mailService = mailService;
+           
         }
 
         [HttpPost]
@@ -28,14 +29,15 @@ namespace E_CommerceAPI.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ExampleMailTest()
+
+
+
+        [HttpPost("update-password")]
+        public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordCommandRequest updatePasswordCommandRequest)
         {
-            await _mailService.SendMessageAsync("aqsin777@gmail.com", "Örnek Mail", "<strong>Bu bir örnek maildir.</strong>");
-            return Ok();
+            UpdatePasswordCommandResponse response = await _mediator.Send(updatePasswordCommandRequest);
+            return Ok(response);
         }
-
-
 
 
 

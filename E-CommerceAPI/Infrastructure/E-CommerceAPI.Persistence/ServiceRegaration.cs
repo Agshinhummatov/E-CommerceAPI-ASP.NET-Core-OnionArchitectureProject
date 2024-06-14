@@ -5,6 +5,7 @@ using E_CommerceAPI.Domain.Entities.Identity;
 using E_CommerceAPI.Persistence.Contexts;
 using E_CommerceAPI.Persistence.Repositories;
 using E_CommerceAPI.Persistence.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,7 +28,7 @@ namespace E_CommerceAPI.Persistence
                 options.Password.RequireUppercase = false;
 
 
-            }).AddEntityFrameworkStores<ECommerceAPIDbContext>();
+            }).AddEntityFrameworkStores<ECommerceAPIDbContext>().AddDefaultTokenProviders();  // AddDefaultTokenProviders()  bunu vasitesi ile GeneratePasswordResetTokenAsync bilecem bu layerde
 
 
             services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
