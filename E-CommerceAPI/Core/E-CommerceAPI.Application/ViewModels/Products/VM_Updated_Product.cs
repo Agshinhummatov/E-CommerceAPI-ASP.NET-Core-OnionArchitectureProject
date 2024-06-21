@@ -14,7 +14,5 @@ namespace E_CommerceAPI.Application.ViewModels.Products
         public int Stock { get; set; }
         public float Price { get; set; }
 
-
-
     }
 }

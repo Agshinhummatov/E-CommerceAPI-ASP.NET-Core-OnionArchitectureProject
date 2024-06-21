@@ -18,6 +18,8 @@ namespace E_CommerceAPI.Domain.Entities
 
         //public ICollection<Product> Products { get; set; }
 
+        public CompletedOrder CompletedOrder { get; set; }
+
 
     }
 }

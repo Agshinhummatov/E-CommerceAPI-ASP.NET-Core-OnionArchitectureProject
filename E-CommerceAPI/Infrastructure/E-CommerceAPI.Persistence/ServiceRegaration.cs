@@ -46,8 +46,9 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IBasketWriteRepository, BasketWriteRepository>(); 
             services.AddScoped<IBasketReadRepository, BasketReadRepository>();
             services.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
-            services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>(); 
-          
+            services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
+            services.AddScoped<ICompletedOrderReadRepository, CompletedOrderReadRepository>();
+            services.AddScoped<ICompletedOrderWriteRepository, CompletedOrderWriteRepository>();
 
 
 
