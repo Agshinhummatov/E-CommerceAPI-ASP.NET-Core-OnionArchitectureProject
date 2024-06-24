@@ -1,11 +1,7 @@
 ﻿using E_CommerceAPI.Application.Abstractions.Services;
-using E_CommerceAPI.Application.Features.Queries.Product.GetByIdProduct;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace E_CommerceAPI.Application.Features.Queries.Order.GetOrderById
 {

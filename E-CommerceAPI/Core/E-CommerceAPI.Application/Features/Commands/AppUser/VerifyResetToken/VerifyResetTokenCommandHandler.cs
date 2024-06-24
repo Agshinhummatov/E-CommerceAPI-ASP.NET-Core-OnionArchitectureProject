@@ -19,8 +19,8 @@ namespace E_CommerceAPI.Application.Features.Commands.AppUser.VerifyResetToken
 
         public async Task<VerifyResetTokenCommandResponse> Handle(VerifyResetTokenCommandRequest request, CancellationToken cancellationToken)
         {
-         bool state = await _authService.VerifyResetTokenAsync(request.ResetToken,request.UserId);
-
+            bool state = await _authService.VerifyResetTokenAsync(request.ResetToken,request.UserId);
+            
             return new()
             {
               State = state

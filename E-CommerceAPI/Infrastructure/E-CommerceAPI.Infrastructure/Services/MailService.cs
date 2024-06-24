@@ -19,6 +19,7 @@ namespace E_CommerceAPI.Infrastructure.Services
             _configuration = configuration;
         }
 
+      
         public async Task SendMailAsync(string to, string subject, string body, bool isBodyHtml = true)
         {
            await SendMailAsync(new[] {to},subject,body,isBodyHtml);
@@ -68,5 +69,21 @@ namespace E_CommerceAPI.Infrastructure.Services
           
 
         }
+
+
+
+
+
+
+
+        public async Task SendCompletedOrderMailAsync(string to, string orderCode, DateTime orderDate, string userName)
+        {
+            string mail = $" Hormetli {userName} Salam <br>"
+                + $"{orderDate} tarixinde vermis olduqunuz {orderCode} koldu sifarisniz tamlanib,catdirilma ucun carqo firmasina verilmisdir";
+
+            await SendMailAsync(to, $"{orderCode} Sifaris Numarali Sifariniz Tamamlandi", mail);
+
+        }
+        
     }
 }

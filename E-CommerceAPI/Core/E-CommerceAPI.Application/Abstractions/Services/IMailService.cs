@@ -13,6 +13,9 @@ namespace E_CommerceAPI.Application.Abstractions.Services
 
         Task SendPasswordResetMailAsync(string to,string userId, string resetToken);
 
+
+        Task SendCompletedOrderMailAsync(string to,string orderCode, DateTime orderDate,string userName);
+
         
     }
 }

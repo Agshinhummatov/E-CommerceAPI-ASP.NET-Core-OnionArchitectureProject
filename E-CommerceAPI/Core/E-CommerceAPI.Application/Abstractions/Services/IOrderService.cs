@@ -14,6 +14,7 @@ namespace E_CommerceAPI.Application.Abstractions.Services
 
         Task<SingleOrder> GetOrderByIdAsync(string id);
 
-        Task CompleteOrderAsync(string id);
+    
+        Task<(bool, CompletedOrderDTO)> CompleteOrderAsync(string id);
     }
 }
