@@ -1,9 +1,11 @@
 ﻿
 using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.Abstractions.Services.Configurations;
 using E_CommerceAPI.Application.Abstractions.Storage;
 using E_CommerceAPI.Application.Abstractions.Token;
 using E_CommerceAPI.Infrastructure.Enums;
 using E_CommerceAPI.Infrastructure.Services;
+using E_CommerceAPI.Infrastructure.Services.Configurations;
 using E_CommerceAPI.Infrastructure.Services.Storage;
 using E_CommerceAPI.Infrastructure.Services.Storage.Azure;
 using E_CommerceAPI.Infrastructure.Services.Storage.Local;
@@ -22,6 +24,7 @@ namespace E_CommerceAPI.Infrastructure
             serviceCollection.AddScoped<IStorageService, StorageService>();
             serviceCollection.AddScoped<ITokenHandler, TokenHandler>();
             serviceCollection.AddScoped<IMailService, MailService>();
+            serviceCollection.AddScoped<IApplicationService, ApplicationService>();
 
         }
 

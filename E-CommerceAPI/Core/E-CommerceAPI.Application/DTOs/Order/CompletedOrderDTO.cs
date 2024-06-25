@@ -12,6 +12,8 @@ namespace E_CommerceAPI.Application.DTOs.Order
         public DateTime OrderDate { get; set; } 
         public string userName { get; set; } 
       
-        public string EMail { get; set; }  
+        public string EMail { get; set; } 
+        
+        
     }
 }
