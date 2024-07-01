@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5QVD+DaVTDB0bViFc8LuJUpTH0a+Oyr+DCb2KZHpLwjJi1Z+dn384dcDM8PAmLPMDk3isY93WrxLwRNIIN7yOQ==",
+  "dgSpecHash": "KvpyYod3XhWqgbaoUvBzgMLuOfyQcf64JOUUILwf0rYYtrpBCN3EXuWHzW6egUtzn6kHPxPKAbpc705UtRhKaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.36.0\\azure.core.1.36.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.storage.blobs\\12.19.1\\azure.storage.blobs.12.19.1.nupkg.sha512",

@@ -2901,11 +2901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
       "projectName": "E-CommerceAPI.Domain",
-      "projectPath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
+      "projectPath": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\E-CommerceAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

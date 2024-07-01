@@ -66,8 +66,8 @@ namespace E_CommerceAPI.API.Controllers
 
 
         [HttpPut]
-        [Authorize(AuthenticationSchemes = "Admin")]
-        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Products, ActionType = ActionType.Updating, Definition = "Update Product")]
+        //[Authorize(AuthenticationSchemes = "Admin")]
+        //[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Products, ActionType = ActionType.Updating, Definition = "Update Product")]
         public async Task<IActionResult> Put([FromBody]UpdateProductCommandRequset updateProductCommandRequset)
         {
            UpdateProductCommandResponse responce = await _mediator.Send(updateProductCommandRequset);

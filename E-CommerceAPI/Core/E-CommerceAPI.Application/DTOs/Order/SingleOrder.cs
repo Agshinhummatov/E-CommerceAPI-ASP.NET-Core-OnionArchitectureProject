@@ -17,4 +17,6 @@ namespace E_CommerceAPI.Application.DTOs.Order
         public bool Completed { get; set; }
 
     }
+
+
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gMFtXqlIEjdBAvzoYbAt7WKv/89PWNGR2MyV6HLNJK07QUrYCD//lN1qjkQU6IRRCQFYWxxkphgYo/qsELbi/w==",
+  "dgSpecHash": "sifq0ajqmOGMQ9rF+UFN1lRBODNhl1bV1TX7nK6KqD/t9nagHsjCx7n/wiK5Fuf0Fnll6Ey20OizOE7Z2lO7qQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.SignalR\\E-CommerceAPI.SignalR.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.SignalR\\E-CommerceAPI.SignalR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

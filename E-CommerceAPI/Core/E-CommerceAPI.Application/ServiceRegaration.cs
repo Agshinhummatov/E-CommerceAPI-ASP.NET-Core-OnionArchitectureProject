@@ -16,4 +16,5 @@ namespace E_CommerceAPI.Application
             collection.AddHttpClient();
         }
     }
+
 }

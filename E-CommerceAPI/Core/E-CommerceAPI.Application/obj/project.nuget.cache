@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wk9Ly1pxTDuWVynm3kQjnxZrJ89Mb4xhqdwD3Yy0AjXKrMd2FZkwB9FRnWnE3/42Nrp42ZpqyXP0q24DiGl4jg==",
+  "dgSpecHash": "IjlTswud0KwArzJQy8QEJz52VYARHHSnTD4ZBn/q5ebY2RIxMdI+AA3AhU1PcIVu6a7UyYvT6X6NE64gGYwggQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\APIClone\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\EsasApI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
