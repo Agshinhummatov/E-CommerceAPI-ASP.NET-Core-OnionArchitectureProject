@@ -39,7 +39,15 @@ namespace E_CommerceAPI.Persistence.Services
         {
             var query = _roleManager.Roles;
 
-            return (query.Skip(page * size).Take(size).Select(r => new { r.Id, r.Name }), query.Count());
+            IQueryable<AppRole> rolesQurey = null;
+            if (page != -1 || size != -1)
+                rolesQurey = query.Skip(page * size).Take(size);
+               else
+                rolesQurey = query;
+
+
+            return (rolesQurey.Select(r => new { r.Id, r.Name }), query.Count());
+
         }
 
         public async Task<(string id, string name)> GetRoleById(string id)

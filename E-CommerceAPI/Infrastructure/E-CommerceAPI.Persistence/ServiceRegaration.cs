@@ -30,6 +30,7 @@ namespace E_CommerceAPI.Persistence
 
             }).AddEntityFrameworkStores<ECommerceAPIDbContext>().AddDefaultTokenProviders();  // AddDefaultTokenProviders()  bunu vasitesi ile GeneratePasswordResetTokenAsync bilecem bu layerde
 
+            //Repository
 
             services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
             services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
@@ -49,9 +50,15 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
             services.AddScoped<ICompletedOrderReadRepository, CompletedOrderReadRepository>();
             services.AddScoped<ICompletedOrderWriteRepository, CompletedOrderWriteRepository>();
+            services.AddScoped<IMenuReadRepository, MenuReadRepository>();
+            services.AddScoped<IMenuWriteRepository, MenuWriteRepository>();
+            services.AddScoped<IEndpointReadRepository, EndpointReadRepository>();
+            services.AddScoped<IEndpointWriteRepository, EndpointWriteRepository>();
+
+           
 
 
-
+            //Service
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAuthService, AuthService>();
@@ -59,7 +66,8 @@ namespace E_CommerceAPI.Persistence
             services.AddScoped<IInternalAuthentication, AuthService>();
             services.AddScoped<IBasketService, BasketService>(); 
             services.AddScoped<IOrderService, OrderService>();  
-            services.AddScoped<IRoleService, RoleService>();  
+            services.AddScoped<IRoleService, RoleService>();   
+            services.AddScoped<IAuthorizationEndpointService, AuthorizationEndpointService>();   
 
 
 
