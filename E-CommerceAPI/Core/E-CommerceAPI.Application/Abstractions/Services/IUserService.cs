@@ -22,7 +22,9 @@ namespace E_CommerceAPI.Application.Abstractions.Services
 
         Task AssignRoleToUserAsnyc(string userId, string[] roles);
 
-        Task<string[]> GetRolesToUserAsync(string userId);
+        Task<string[]> GetRolesToUserAsync(string userIdOrName);
+
+        Task<bool> HasRolePermissionToEndpointAsync(string name, string code);  // name: userName, code: endpoint code(example  POST.Writing.CreateProduct codenin icinden bu cure gelir)
 
     }
 }

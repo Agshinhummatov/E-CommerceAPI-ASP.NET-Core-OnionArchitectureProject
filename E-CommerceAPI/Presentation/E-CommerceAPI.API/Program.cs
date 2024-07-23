@@ -1,5 +1,6 @@
 using E_CommerceAPI.API.Configurations.ColumnWriters;
 using E_CommerceAPI.API.Extensions;
+using E_CommerceAPI.API.Filters;
 using E_CommerceAPI.Application;
 using E_CommerceAPI.Application.Validations.Products;
 using E_CommerceAPI.Infrastructure;
@@ -37,7 +38,7 @@ builder.Services.AddStorage<AzureStorage>();// burda bildiremki filerim hansi lo
 
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-    policy.WithOrigins("http://localhost:4200", "http://localhost:4200")
+    policy.WithOrigins("http://localhost:4200", "https://localhost:4200")
           .AllowAnyHeader()
           .AllowAnyMethod().AllowCredentials()
 ));
@@ -72,7 +73,11 @@ builder.Services.AddHttpLogging(logging =>
     logging.ResponseBodyLogLimit = 4096;
 });
 
-builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()).AddFluentValidation(configuration => configuration
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<RolePermissionFilter>();
+}).AddFluentValidation(configuration => configuration
 .RegisterValidatorsFromAssemblyContaining<CreateProductValidator>()).ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -102,6 +107,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
             LifetimeValidator = (notBefore,expires, securityToken,validationParameters) => expires != null ? expires > DateTime.UtcNow : false , // burds ise acces tokenimiz muddetini methodla gonderecem ona uygun edirem nece saniye olacaq deye bu namespacededi  E_CommerceAPI.Infrastructure.Services.Token
             NameClaimType = ClaimTypes.Name //JWT üzerinde Name claimne karþýlýk gelen deðeri User.Identity.Name propertysinden elde edebiliriz.
+            
         };
     });
 

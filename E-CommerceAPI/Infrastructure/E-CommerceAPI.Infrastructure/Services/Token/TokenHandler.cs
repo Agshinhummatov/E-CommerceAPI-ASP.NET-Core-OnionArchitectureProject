@@ -44,7 +44,7 @@ namespace E_CommerceAPI.Infrastructure.Services.Token
                 expires : token.Expiration,
                 notBefore : DateTime.UtcNow, // ne zaman tokeni olsudursun ve devereye girsin? ele hemen deqiqe method bu name spacdedi E_CommerceAPI.Infrastructure.Services.Token
                 signingCredentials : signingCredentials,
-                claims : new List<Claim> { new(ClaimTypes.Name, user.UserName) } // user name jwt tokende verecek program csde bunun qarsliqini yazacam
+                claims : new List<Claim> { new(ClaimTypes.Name, user.UserName) } // burda ben ClaimTypes.Name qarsiliq olaraq   user.UserName verirem yeni userName essasyin edirem  buna ClaimTypes.Name mene hardasa username lazimdisa  ClaimTypes.Name ile ona cata bilirem// her jwt token olsudurduqda  user name jwt tokende verecek mene lazim olduqu yerde tokenin icinden username ulasa bilecem
                 );
 
             // token olsdurucu sinifindan bir ornek alalim
