@@ -1,4 +1,5 @@
-﻿using E_CommerceAPI.Application.Consts;
+﻿using E_CommerceAPI.Application.Abstractions.Services;
+using E_CommerceAPI.Application.Consts;
 using E_CommerceAPI.Application.CustomAttributes;
 using E_CommerceAPI.Application.Enums;
 using E_CommerceAPI.Application.Features.Commands.Product.CreateProduct;
@@ -24,26 +25,38 @@ namespace E_CommerceAPI.API.Controllers
     public class ProductsController : ControllerBase
     {
        
-        readonly IConfiguration _configuration;
+       
         readonly IMediator _mediator;
-
+        readonly IProductService _productService;
 
         public ProductsController(
-            IMediator mediator)
+            IMediator mediator, IProductService productService)
         {
 
             _mediator = mediator;
+            _productService = productService;
         }
+
+
 
 
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllProductQueryRequest getAllProductQueryRequest )
         {
             GetAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
-
             return Ok(response);
         }
-        
+
+
+        [HttpGet("qrcode/{productId}")]
+        public async Task<IActionResult> GetQrCodeToProduct([FromRoute] string productId)
+        { 
+            var data = await  _productService.QRCodeToProductAsync(productId);
+
+            return File(data,"image/png");
+
+        }
+
 
         [HttpGet("{Id}")]
         public async Task<IActionResult> Get([FromRoute]GetByIdProductQureyRequset getByIdProductQureyRequset)
@@ -66,8 +79,8 @@ namespace E_CommerceAPI.API.Controllers
 
 
         [HttpPut]
-        //[Authorize(AuthenticationSchemes = "Admin")]
-        //[AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Products, ActionType = ActionType.Updating, Definition = "Update Product")]
+        [Authorize(AuthenticationSchemes = "Admin")]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstants.Products, ActionType = ActionType.Updating, Definition = "Update Product")]
         public async Task<IActionResult> Put([FromBody]UpdateProductCommandRequset updateProductCommandRequset)
         {
            UpdateProductCommandResponse responce = await _mediator.Send(updateProductCommandRequset);
@@ -123,5 +136,7 @@ namespace E_CommerceAPI.API.Controllers
             ChangeShowcaseImageCommandResponse response = await _mediator.Send(changeShowcaseImageCommandRequest);
             return Ok(response);
         }
+
+
     }
 }

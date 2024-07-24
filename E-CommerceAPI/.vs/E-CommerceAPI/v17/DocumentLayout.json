@@ -7,6 +7,42 @@
       "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\presentation\\e-commerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\presentation\\e-commerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64927957-ECD1-4BD2-87FA-3ECB4275C25E}|Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\infrastructure\\e-commerceapi.persistence\\serviceregaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64927957-ECD1-4BD2-87FA-3ECB4275C25E}|Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\e-commerceapi.persistence\\serviceregaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64927957-ECD1-4BD2-87FA-3ECB4275C25E}|Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\infrastructure\\e-commerceapi.persistence\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64927957-ECD1-4BD2-87FA-3ECB4275C25E}|Infrastructure\\E-CommerceAPI.Persistence\\E-CommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\e-commerceapi.persistence\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\core\\e-commerceapi.application\\abstractions\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|solutionrelative:core\\e-commerceapi.application\\abstractions\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\infrastructure\\e-commerceapi.infrastructure\\serviceregaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\e-commerceapi.infrastructure\\serviceregaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\infrastructure\\e-commerceapi.infrastructure\\services\\qrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\e-commerceapi.infrastructure\\services\\qrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\core\\e-commerceapi.application\\abstractions\\services\\iqrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|solutionrelative:core\\e-commerceapi.application\\abstractions\\services\\iqrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\infrastructure\\e-commerceapi.infrastructure\\e-commerceapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F66A9E77-B3DC-43E6-A59C-F5BFA31BD430}|Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\e-commerceapi.infrastructure\\e-commerceapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\presentation\\e-commerceapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\presentation\\e-commerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4286DA-DD65-430E-A313-B7CD19A21A48}|Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj|solutionrelative:presentation\\e-commerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|c:\\users\\airgroup\\onedrive\\masa\u00FCst\u00FC\\ecommerceapi\\e-commerceapi-asp.net-core-onionarchitectureproject\\e-commerceapi\\core\\e-commerceapi.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B322EE7-854B-4BF6-B798-B6BD685ACCE9}|Core\\E-CommerceAPI.Application\\E-CommerceAPI.Application.csproj|solutionrelative:core\\e-commerceapi.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Storage.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\Storage\\Storage.cs",
               "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\Storage\\Storage.cs",
@@ -59,34 +91,91 @@
               "ViewState": "AQIAAB4AAAAAmZmZmZkdwDcAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T10:19:07.66Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RefreshTokenLoginCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
-              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
-              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:09:50.475Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RefreshTokenLoginCommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
-              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
-              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAARAAAA",
+              "Title": "ServiceRegaration.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\ServiceRegaration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Persistence\\ServiceRegaration.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\ServiceRegaration.cs",
+              "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Persistence\\ServiceRegaration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T12:09:01.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T08:07:49.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Persistence\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\Services\\ProductService.cs",
+              "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Persistence\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:08:04.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IProductService.cs",
+              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:27:37.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\E-CommerceAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\E-CommerceAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:17:31.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceRegaration.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\ServiceRegaration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Infrastructure\\ServiceRegaration.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\ServiceRegaration.cs",
+              "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Infrastructure\\ServiceRegaration.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:16:20.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QRCodeService.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\QRCodeService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\QRCodeService.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\QRCodeService.cs",
+              "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Infrastructure\\Services\\QRCodeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T05:56:59.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IQRCodeService.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IQRCodeService.cs",
+              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IQRCodeService.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IQRCodeService.cs",
+              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IQRCodeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T05:53:52.96Z"
             },
             {
               "$type": "Document",
@@ -96,27 +185,62 @@
               "RelativeDocumentMoniker": "Presentation\\E-CommerceAPI.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Presentation\\E-CommerceAPI.API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAADgvyEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T11:52:32.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "E-CommerceAPI.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Infrastructure\\E-CommerceAPI.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-24T05:58:10.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RefreshTokenLoginCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
+              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T12:09:50.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RefreshTokenLoginCommandRequest.cs",
+              "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
+              "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
+              "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
+              "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Features\\Commands\\AppUser\\RefreshTokenLogin\\RefreshTokenLoginCommandRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T12:09:01.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\E-CommerceAPI.API\\Program.cs",
               "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Program.cs",
               "RelativeToolTip": "Presentation\\E-CommerceAPI.API\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACsAAAADAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAIBJwCsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:31:25.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T08:31:25.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "RolePermissionFilter.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Filters\\RolePermissionFilter.cs",
               "RelativeDocumentMoniker": "Presentation\\E-CommerceAPI.API\\Filters\\RolePermissionFilter.cs",
@@ -124,12 +248,11 @@
               "RelativeToolTip": "Presentation\\E-CommerceAPI.API\\Filters\\RolePermissionFilter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:24:54.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T08:24:54.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IUserService.cs",
@@ -137,25 +260,23 @@
               "RelativeToolTip": "Core\\E-CommerceAPI.Application\\Abstractions\\Services\\IUserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T06:56:14.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T06:56:14.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\E-CommerceAPI.Persistence\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Infrastructure\\E-CommerceAPI.Persistence\\Services\\UserService.cs",
               "RelativeToolTip": "Infrastructure\\E-CommerceAPI.Persistence\\Services\\UserService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwJQAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wJQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T06:55:26.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T06:55:26.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\airgroup\\OneDrive\\Masa\u00FCst\u00FC\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Presentation\\E-CommerceAPI.API\\Controllers\\UsersController.cs",
@@ -163,8 +284,7 @@
               "RelativeToolTip": "Presentation\\E-CommerceAPI.API\\Controllers\\UsersController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwEAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T06:53:41.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T06:53:41.187Z"
             }
           ]
         }

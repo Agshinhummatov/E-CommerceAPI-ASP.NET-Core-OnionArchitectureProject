@@ -538,3 +538,4 @@ C:\Users\airgroup\OneDrive\Masaüstü\ECommerceAPI\E-CommerceAPI-ASP.NET-Core-On
 C:\Users\airgroup\OneDrive\Masaüstü\ECommerceAPI\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.pdb
 C:\Users\airgroup\OneDrive\Masaüstü\ECommerceAPI\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\E-CommerceAPI.API.genruntimeconfig.cache
 C:\Users\airgroup\OneDrive\Masaüstü\ECommerceAPI\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\obj\Debug\net6.0\ref\E-CommerceAPI.API.dll
+C:\Users\airgroup\OneDrive\Masaüstü\ECommerceAPI\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\E-CommerceAPI\Presentation\E-CommerceAPI.API\bin\Debug\net6.0\QRCoder.dll

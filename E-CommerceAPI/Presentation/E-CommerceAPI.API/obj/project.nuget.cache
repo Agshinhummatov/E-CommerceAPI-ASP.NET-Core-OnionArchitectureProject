@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X1GIJJirnsY=",
+  "dgSpecHash": "vL1a1cSoOHQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\airgroup\\OneDrive\\Masaüstü\\ECommerceAPI\\E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject\\E-CommerceAPI\\Presentation\\E-CommerceAPI.API\\E-CommerceAPI.API.csproj",
   "expectedPackageFiles": [
@@ -85,6 +85,7 @@
     "C:\\Users\\airgroup\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\airgroup\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
     "C:\\Users\\airgroup\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.3\\npgsql.entityframeworkcore.postgresql.6.0.3.nupkg.sha512",
+    "C:\\Users\\airgroup\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\airgroup\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\airgroup\\.nuget\\packages\\serilog.aspnetcore\\6.0.1\\serilog.aspnetcore.6.0.1.nupkg.sha512",
     "C:\\Users\\airgroup\\.nuget\\packages\\serilog.extensions.hosting\\5.0.1\\serilog.extensions.hosting.5.0.1.nupkg.sha512",
