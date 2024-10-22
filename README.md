@@ -1,4 +1,4 @@
-The more advanced version of this project is in this repository : https://github.com/Agshinhummatov/E-CommerceAPI-ASP.NET-Core-OnionArchitectureProject
+
 
 
 # ECommerce Project
@@ -8,13 +8,15 @@ This project aims to [briefly describe the project purpose].
 ## Technologies Used
 
 - ASP.NET Core
-- MediatR CQRS
-- Entity Framework Core 
-- Onion Architecture
+- CQRS and Mediator Design Utilization
+- Onion Architecture Implementation
 - Swagger
 - PostgreSQL
 - Docker (optional, if used)
 - JWT Authentication (optional, if used)
+- Authentication with JWT Token and Rerfresh Token
+- Login with Google and Facebook
+- Files are uploaded to Microsoft Azure storage
 
 ## Project Overview
 
