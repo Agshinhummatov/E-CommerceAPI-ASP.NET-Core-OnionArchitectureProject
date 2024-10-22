@@ -1,6 +1,7 @@
 # E-Commerce API - ASP.NET Core Onion Architecture
 
-The advanced version of this project is available at [E-CommerceClient-AngularProject](https://github.com/Agshinhummatov/E-Commerce-Client-Angular)
+## Clinte Angular Project
+The advanced version of this project is available at [E-CommerceClient-AngularProject](https://github.com/Agshinhummatov/E-Commerce-Client-Angular), which is the Angular-based frontend client that consumes this API.
 
 ## Overview  
 This project provides a RESTful API to support an e-commerce system. The API is built using **ASP.NET Core** and follows the **Onion Architecture** pattern to ensure clean separation of concerns, scalability, and maintainability.
